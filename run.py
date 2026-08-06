@@ -3,11 +3,34 @@ from flask import Flask, render_template, request, redirect, url_for
 if os.path.exists('env.py'):
     import env
 
+
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
     return render_template('index.html')
+
+
+@app.route('/work')
+def work():
+    return render_template('work.html')
+
+
+@app.route('/facilities')
+def facilities():   
+    return render_template('facilities.html')
+
+
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+
+@app.route('/contact-us')
+def contact_us():   
+    return render_template('contact-us.html')
+
 
 # ensures your Flask dev server only starts when you run the file directly, not when it's imported elsewhere.
 if __name__ == "__main__":
