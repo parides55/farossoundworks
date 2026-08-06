@@ -2,5 +2,5 @@ venv/
 faros-venv/
 __pycache__/
 *.pyc
-.env
+env.py
 node_modules/
