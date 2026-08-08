@@ -32,12 +32,12 @@
             </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-            <a href="{{ url_for('index') }}" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Home</a>
-            <a href="{{ url_for('work') }}" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Our Work</a>
-            <a href="{{ url_for('services') }}" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Our Services</a>
-            <a href="{{ url_for('facilities') }}" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Facilities</a>
+            <a href="{{ url_for('index') }}" class="font-label text-xs text-ink-soft uppercase tracking-widest px-3 py-2">Home</a>
+            <a href="{{ url_for('work') }}" class="font-label text-xs text-ink-soft uppercase tracking-widest px-3 py-2">Our Work</a>
+            <a href="{{ url_for('services') }}" class="font-label text-xs text-ink-soft uppercase tracking-widest px-3 py-2">Our Services</a>
+            <a href="{{ url_for('facilities') }}" class="font-label text-xs text-ink-soft uppercase tracking-widest px-3 py-2">Facilities</a>
 
-            <a href="{{ url_for('contact_us') }}" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Get in touch <span aria-hidden="true">&rarr;</span></a>
+            <a href="{{ url_for('contact_us') }}" class="font-label text-xs text-ink-soft uppercase tracking-widest border-2 border-ink-soft border-solid px-3 py-2">Get in touch <span aria-hidden="true">&rarr;</span></a>
             </div>
         </nav>
         <el-dialog>
@@ -59,13 +59,13 @@
                         <div class="mt-6 flow-root">
                             <div class="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
                                 <div class="space-y-2 py-6">
-                                    <a href="{{ url_for('index') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Home</a>
-                                    <a href="{{ url_for('work') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Our Work</a>
-                                    <a href="{{ url_for('services') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Our Services</a>
-                                    <a href="{{ url_for('facilities') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Facilities</a>
+                                    <a href="{{ url_for('index') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest text-ink-soft uppercase">Home</a>
+                                    <a href="{{ url_for('work') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest text-ink-soft uppercase">Our Work</a>
+                                    <a href="{{ url_for('services') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest text-ink-soft uppercase">Our Services</a>
+                                    <a href="{{ url_for('facilities') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest text-ink-soft uppercase">Facilities</a>
                                 </div>
                                 <div class="py-6">
-                                    <a href="{{ url_for('contact_us') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">GET IN TOUCH</a>
+                                    <a href="{{ url_for('contact_us') }}" class="-mx-3 block px-3 py-2.5 font-label text-xs tracking-widest text-ink-soft uppercase border-2 border-ink-soft border-solid">GET IN TOUCH</a>
                                 </div>
                             </div>
                         </div>
