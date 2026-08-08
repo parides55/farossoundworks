@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@theme {
+    /* Palette */
+    --color-paper: oklch(98.137% 0.00577 59.08);
+    --color-paper-warm: oklch(93.215% 0.01431 84.543);
+    --color-ink:         oklch(19.125% 0.00002 271.152);
+    --color-ink-soft:    oklch(34.84% 0.00526 91.547);
+    --color-slate:       oklch(40.195% 0.03396 248.719);   
+    --color-slate-deep:  oklch(30.305% 0.02584 246.471);
+    --color-gold:        oklch(69.961% 0.0752 78.486);   
+    --color-fog:         rgba(20,20,20,0.06);
+    --color-line:        rgba(20,20,20,0.14);
+    --color-line-soft:   rgba(20,20,20,0.08);
+
+    /* Type */
+    --font-display: 'Cormorant', Georgia, serif;
+    --font-label:   'Jost', system-ui, sans-serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+    h1, h2, h3 {
+        font-family: var(--font-display);
+        font-weight: 500;
+        line-height:1.04;
+        letter-spacing: -0.01em;
+    }
+}
