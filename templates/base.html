@@ -15,13 +15,11 @@
 
 </head>
 <body class="bg-paper font-body text-ink text-base font-normal overflow-x-hidden leading-[1.65]">
-    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
     <header>
-        <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <nav aria-label="Global" class="mx-auto flex max-w-auto items-center justify-between p-5 lg:px-8">
             <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img src="{{ url_for('static', filename='images/faros-logo.jpeg') }}" alt="" class="h-8 w-auto dark:hidden" />
+            <img src="{{ url_for('static', filename='images/faros-logo-400x200-transparent.png') }}" alt="" class="h-15 w-auto" />
             </a>
             <div class="flex lg:hidden">
             <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400">
@@ -47,7 +45,7 @@
                         <div class="flex items-center justify-between">
                             <a href="#" class="-m-1.5 p-1.5">
                                 <span class="sr-only">Your Company</span>
-                                <img src="{{ url_for('static', filename='images/faros-logo.jpeg') }}" alt="" class="h-8 w-auto dark:hidden" />
+                                <img src="{{ url_for('static', filename='images/faros-logo-400x200-transparent.png') }}" alt="" class="h-15 w-auto dark:hidden" />
                             </a>
                             <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400">
                                 <span class="sr-only">Close menu</span>
@@ -65,7 +63,7 @@
                                     <a href="{{ url_for('facilities') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest text-ink-soft uppercase">Facilities</a>
                                 </div>
                                 <div class="py-6">
-                                    <a href="{{ url_for('contact_us') }}" class="-mx-3 block px-3 py-2.5 font-label text-xs tracking-widest text-ink-soft uppercase border-2 border-ink-soft border-solid">GET IN TOUCH</a>
+                                    <a href="{{ url_for('contact_us') }}" class="-mx-3 block px-3 py-2.5 font-label text-xs tracking-widest text-ink-soft uppercase border-2 border-ink-soft border-solid">GET IN TOUCH<span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +79,7 @@
     {% endblock %}
 
     <footer>
-        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+        <div class="mx-auto max-w-auto overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
             <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
                 <a href="{{ url_for('index') }}" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Home</a>
                 <a href="{{ url_for('work') }}" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Our Work</a>
