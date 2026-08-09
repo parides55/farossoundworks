@@ -4,19 +4,22 @@
     /* Palette */
     --color-paper: oklch(98.137% 0.00577 59.08);
     --color-paper-warm: oklch(93.215% 0.01431 84.543);
-    --color-ink:         oklch(19.125% 0.00002 271.152);
-    --color-ink-soft:    oklch(34.84% 0.00526 91.547);
-    --color-slate:       oklch(40.195% 0.03396 248.719);   
-    --color-slate-deep:  oklch(30.305% 0.02584 246.471);
-    --color-gold:        oklch(69.961% 0.0752 78.486);   
-    --color-fog:         rgba(20,20,20,0.06);
-    --color-line:        rgba(20,20,20,0.14);
-    --color-line-soft:   rgba(20,20,20,0.08);
+    --color-ink: oklch(19.125% 0.00002 271.152);
+    --color-ink-soft: oklch(34.84% 0.00526 91.547);
+    --color-slate: oklch(40.195% 0.03396 248.719);   
+    --color-slate-deep: oklch(30.305% 0.02584 246.471);
+    --color-gold: oklch(69.961% 0.0752 78.486);   
+    --color-fog: rgba(20,20,20,0.06);
+    --color-line: rgba(20,20,20,0.14);
+    --color-line-soft: rgba(20,20,20,0.08);
 
     /* Type */
     --font-display: 'Cormorant', Georgia, serif;
     --font-label:   'Jost', system-ui, sans-serif;
     --font-body:    'Inter', system-ui, sans-serif;
+
+    /* Motion */
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @layer base {
@@ -25,5 +28,46 @@
         font-weight: 500;
         line-height:1.04;
         letter-spacing: -0.01em;
+    }
+}
+
+@layer components {
+    .h-display {
+            font-size: clamp(3rem, 8vw, 6.5rem);
+        }
+    .h-section {
+        font-size: clamp(2.3rem, 5vw, 3.9rem);
+    }
+    .btn {
+        font-family: var(--font-label);
+        font-size: 0.78rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding: 1.05rem 2.2rem;
+        background: var(--color-ink);
+        border: 1px solid var(--color-ink);
+        color: var(--color-paper);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+    .btn__beam {
+        width: 20px;
+        height: 1px;
+        background: currentColor;
+        transition: width .4s var(--ease);
+    }
+    .eyebrow {
+        font-family: var(--label);
+        font-weight: 400;
+        font-size: 0.72rem;
+        letter-spacing: 0.42em;
+        text-transform: uppercase;
+        color: var(--slate);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.9rem;
     }
 }
