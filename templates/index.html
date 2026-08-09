@@ -16,24 +16,27 @@
         </div>
     </section>
 
-    <hr class="border-ink h-0.5">
-    <section class="h-50 w-auto"><!--Who we are Section-->
+    <section class="section"><!--Who we are Section-->
         <h2 class="h-section">Who we are</h2>
     </section>
 
-    <hr class="border-ink h-0.5">
-    <section class="h-50 w-auto"><!--What we do Section-->
+    <section class="section bg-paper-warm"><!--What we do Section-->
         <h2 class="h-section">What we do</h2>
     </section>
 
-    <hr class="border-ink h-0.5">
-    <section class="h-50 w-auto"><!--Our work Section-->
+    <section class="section"><!--Our work Section-->
         <h2 class="h-section">Our work</h2>
     </section>
 
-    <hr class="border-ink h-0.5">
-    <section class="h-50 w-auto"><!--Start Project Section-->
-        <h2 class="h-section">Start a project</h2>
+    <section class="section bg-paper-warm"><!--Start Project Section-->
+        <div class="space-y-4 text-center">
+            <p class="eyebrow">Start a project</p>
+            <h2 class="h-section">Tell us what you're making. We'll light the way.</h2>
+            <div>
+                <a class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 transition-colors" href="{{ url_for('contact_us') }}">Request a quote <span class="btn__beam group-hover:w-8"></span></a>
+                <a class="btn bg-paper text-ink hover:bg-ink hover:text-paper transition-colors hover:-translate-y-1" href="{{ url_for('facilities') }}">Tour our studios</a>
+            </div>
+        </div>
     </section>
 
 {% endblock %}
