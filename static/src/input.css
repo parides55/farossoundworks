@@ -32,6 +32,9 @@
 }
 
 @layer components {
+    .section {
+            padding-block: clamp(4.5rem, 10vw, 9rem);
+    }
     .h-display {
             font-size: clamp(3rem, 8vw, 6.5rem);
         }
@@ -59,14 +62,22 @@
         transition: width .4s var(--ease);
     }
     .eyebrow {
-        font-family: var(--label);
+        font-family: var(--font-label);
         font-weight: 400;
         font-size: 0.72rem;
         letter-spacing: 0.42em;
         text-transform: uppercase;
-        color: var(--slate);
+        color: var(--color-slate);
         display: inline-flex;
         align-items: center;
         gap: 0.9rem;
+    }
+    /* the beam-sweep marker that replaces generic numbering */
+    .eyebrow::before {
+        content: "";
+        width: 42px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--color-slate));
+        display: inline-block;
     }
 }

@@ -36,8 +36,10 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-paper: oklch(98.137% 0.00577 59.08);
+    --color-paper-warm: oklch(93.215% 0.01431 84.543);
     --color-ink: oklch(19.125% 0.00002 271.152);
     --color-ink-soft: oklch(34.84% 0.00526 91.547);
+    --color-slate: oklch(40.195% 0.03396 248.719);
     --color-slate-deep: oklch(30.305% 0.02584 246.471);
     --font-display: 'Cormorant', Georgia, serif;
     --font-label: 'Jost', system-ui, sans-serif;
@@ -241,6 +243,9 @@
   .-mx-3 {
     margin-inline: calc(var(--spacing) * -3);
   }
+  .mx-12 {
+    margin-inline: calc(var(--spacing) * 12);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -284,14 +289,8 @@
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
   }
-  .h-0\.5 {
-    height: calc(var(--spacing) * 0.5);
-  }
   .h-15 {
     height: calc(var(--spacing) * 15);
-  }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
   }
   .h-full {
     height: 100%;
@@ -372,14 +371,14 @@
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-ink {
-    border-color: var(--color-ink);
-  }
   .border-ink-soft {
     border-color: var(--color-ink-soft);
   }
   .bg-paper {
     background-color: var(--color-paper);
+  }
+  .bg-paper-warm {
+    background-color: var(--color-paper-warm);
   }
   .object-cover {
     object-fit: cover;
@@ -604,6 +603,9 @@
   }
 }
 @layer components {
+  .section {
+    padding-block: clamp(4.5rem, 10vw, 9rem);
+  }
   .h-display {
     font-size: clamp(3rem, 8vw, 6.5rem);
   }
@@ -631,7 +633,7 @@
     transition: width .4s var(--ease);
   }
   .eyebrow {
-    font-family: var(--label);
+    font-family: var(--font-label);
     font-weight: 400;
     font-size: 0.72rem;
     letter-spacing: 0.42em;
@@ -640,6 +642,13 @@
     display: inline-flex;
     align-items: center;
     gap: 0.9rem;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 42px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-slate));
+    display: inline-block;
   }
 }
 @property --tw-space-y-reverse {
