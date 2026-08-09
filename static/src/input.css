@@ -50,8 +50,7 @@
         display: inline-flex;
         align-items: center;
         gap: 0.7rem;
-        margin-left: 0.2rem;
-        margin-right: 0.2rem;
+        margin: 0.3rem;
     }
     .btn__beam {
         width: 20px;
