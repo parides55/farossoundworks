@@ -22,8 +22,6 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-normal: 400;
@@ -40,7 +38,6 @@
     --color-ink-soft: oklch(34.84% 0.00526 91.547);
     --color-slate: oklch(40.195% 0.03396 248.719);
     --color-slate-deep: oklch(30.305% 0.02584 246.471);
-    --color-fog: rgba(20,20,20,0.06);
     --font-display: 'Cormorant', Georgia, serif;
     --font-label: 'Jost', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
@@ -475,6 +472,11 @@
   }
   .opacity-60 {
     opacity: 60%;
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
