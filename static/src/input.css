@@ -80,4 +80,10 @@
         background: linear-gradient(90deg, transparent, var(--color-slate));
         display: inline-block;
     }
+    .lede {
+            font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+            line-height: 1.6;
+            color: var(--ink-soft);
+            max-width: 44ch;
+        }
 }
