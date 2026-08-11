@@ -1,8 +1,41 @@
 {% extends "base.html" %}
 
 {% block content %}
+<!--Hero Contact Section-->
+<section class="section">
+    <div class="ms-5 me-1 md:ms-10 lg:ms-20 space-y-3">
+        <p class="eyebrow">contact</p>
+        <h1 class="h-display">Let's talk</h1>
+        <p class="lede">Request a quote for a session, or just send a quick message. We usually reply within two working days.</p>
+    </div>
+</section>
 
-    <h1 class="text-3xl font-bold mb-4 text-center">Contact Us</h1>
-    <p class="text-center">Get in touch with us for any inquiries or to schedule a visit.</p>
+<!--Details and Form Section-->
+<section class="section">
+    <div class="flex flex:col">
+        <div> <!--Details-->
+            <p class="eyebrow">Direct</p>
+            <h2 class="h-section">Prefer to reach us straight away?</h2>
+        </div>
+        <div> <!--Form-->
+            <form action="">
+                <div>
+                    <button type="button">QUICK MESSAGE</button>
+                    <button type="button">REQUEST A QUOTE</button>
+                </div>
+                <div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
