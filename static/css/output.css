@@ -657,6 +657,24 @@
     color: var(--ink-soft);
     max-width: 44ch;
   }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .9s var(--ease), transform .9s var(--ease);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal[data-delay="1"] {
+    transition-delay: .08s;
+  }
+  .reveal[data-delay="2"] {
+    transition-delay: .16s;
+  }
+  .reveal[data-delay="3"] {
+    transition-delay: .24s;
+  }
 }
 @property --tw-space-y-reverse {
   syntax: "*";
