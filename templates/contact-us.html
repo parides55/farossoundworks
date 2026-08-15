@@ -17,25 +17,27 @@
             <aside>
                 <p class="eyebrow">Direct</p>
                 <h2 class="h-section">Prefer to reach us straight away?</h2>
-                <div>
-                    <span>Email</span>
-                    <a href="mailto:info@farossoundworks.com">info@farossoundworks.com</a>
-                </div>
-                <div>
-                    <span>Phone</span>
-                    <a href="tel:+441234567890">+44 123 456 7890</a>
-                </div>
-                <div>
-                    <span>Address</span>
-                    <a href="https://www.google.com/maps/place/Faros+Sound+Works/@51.5074,-0.1278,15z/data=!4m2!3m1!1s0x0:0x0?hl=en" target="_blank" rel="noopener noreferrer">123 Music Street, London</a>
-                </div>
-                <div>
-                    <span>Office Hours</span>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM CET</p>
+                <div class="space-y-8 my-8 reveal" data-delay='2'>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] tracking-[0.2rem]">Email</span>
+                        <a href="mailto:info@farossoundworks.com">info@farossoundworks.com</a>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">Phone</span>
+                        <a href="tel:+441234567890">+44 123 456 7890</a>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">Address</span>
+                        <a href="https://www.google.com/maps/place/Faros+Sound+Works/@51.5074,-0.1278,15z/data=!4m2!3m1!1s0x0:0x0?hl=en" target="_blank" rel="noopener noreferrer">123 Music Street, London</a>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">Office Hours</span>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM CET</p>
+                    </div>
                 </div>
             </aside>
         </div>
-        <div class="m-2"> <!--Form-->
+        <div class="m-2" class="reveal" data-delay='3'> <!--Form-->
             <form action="">
                 <div> <!--Mode buttons-->
                     <button type="button" class="mode-btn active">QUICK MESSAGE</button>
@@ -90,7 +92,7 @@
                     <label for="message">Tell us about the music</label>
                     <textarea id="message" name="message" placeholder="Write whatever helps us picture it." required></textarea>
                 </div>
-                <button class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 transition-color" type="submit">Send <span class="btn__beam group-hover:w-8"></span></button>
+                <button class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 transition-color" type="submit">Send <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]" class="btn__beam group-hover:w-8"></span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]"></button>
             </form>
         </div>
     </div>
