@@ -61,6 +61,23 @@
         background: currentColor;
         transition: width .4s var(--ease);
     }
+    .mode-btn {
+        flex: 1;
+        font-family: var(--font-label);
+        font-size: 0.74rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        padding: 0.9rem;
+        border: 1px solid var(--color-line);
+        background: transparent;
+        color: var(--color-ink-soft);
+        transition: all .35s var(--ease);
+    }
+    .mode-btn.active {
+        background: var(--color-ink);
+        color: var(--color-paper);
+        border-color: var(--color-ink);
+    }
     .eyebrow {
         font-family: var(--font-label);
         font-weight: 400;

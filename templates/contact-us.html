@@ -3,7 +3,7 @@
 {% block content %}
 <!--Hero Contact Section-->
 <section class="section">
-    <div class="ms-5 me-1 md:ms-10 lg:ms-20 space-y-3">
+    <div class="ms-5 me-1 md:ms-10 lg:ms-20 space-y-3 reveal">
         <p class="eyebrow">contact</p>
         <h1 class="h-display">Let's talk</h1>
         <p class="lede">Request a quote for a session, or just send a quick message. We usually reply within two working days.</p>
@@ -12,18 +12,36 @@
 
 <!--Details and Form Section-->
 <section class="section">
-    <div class="flex flex:col">
-        <div> <!--Details-->
-            <p class="eyebrow">Direct</p>
-            <h2 class="h-section">Prefer to reach us straight away?</h2>
-        </div>
-        <div> <!--Form-->
-            <form action="">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 reveal">
+        <div class="ms-6 my-5"> <!--Details-->
+            <aside>
+                <p class="eyebrow">Direct</p>
+                <h2 class="h-section">Prefer to reach us straight away?</h2>
                 <div>
-                    <button type="button">QUICK MESSAGE</button>
-                    <button type="button">REQUEST A QUOTE</button>
+                    <span>Email</span>
+                    <a href="mailto:info@farossoundworks.com">info@farossoundworks.com</a>
                 </div>
                 <div>
+                    <span>Phone</span>
+                    <a href="tel:+441234567890">+44 123 456 7890</a>
+                </div>
+                <div>
+                    <span>Address</span>
+                    <a href="https://www.google.com/maps/place/Faros+Sound+Works/@51.5074,-0.1278,15z/data=!4m2!3m1!1s0x0:0x0?hl=en" target="_blank" rel="noopener noreferrer">123 Music Street, London</a>
+                </div>
+                <div>
+                    <span>Office Hours</span>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM CET</p>
+                </div>
+            </aside>
+        </div>
+        <div class="m-2"> <!--Form-->
+            <form action="">
+                <div> <!--Mode buttons-->
+                    <button type="button" class="mode-btn active">QUICK MESSAGE</button>
+                    <button type="button" class="mode-btn">REQUEST A QUOTE</button>
+                </div>
+                <div> <!--Name and Email-->
                     <div>
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text" required>
@@ -33,6 +51,46 @@
                         <input id="email" name="email" type="email" required>
                     </div>
                 </div>
+                <div> <!--Project Type-->
+                    <legend for="project-type">Type of project</legend>
+                    <label for="orchestral">Orchestral Recording</label>
+                    <input id="orchestral" name="orchestral" value="orchestral" type="checkbox">
+                    <label for="composition">Composition</label>
+                    <input id="composition" name="composition" value="composition" type="checkbox">
+                    <label for="arrangement">Arrangement</label>
+                    <input id="arrangement" name="arrangement" value="arrangement" type="checkbox">
+                    <label for="orchestration">Orchestration</label>
+                    <input id="orchestration" name="orchestration" value="orchestration" type="checkbox">
+                    <label for="music-direction">Music Direction</label>
+                    <input id="music-direction" name="music-direction" value="music-direction" type="checkbox">
+                    <label for="midi-mockups">MIDI Mockups</label>
+                    <input id="midi-mockups" name="midi-mockups" value="midi-mockups" type="checkbox">
+                    <label for="score-preparation">Score Preparation</label>
+                    <input id="score-preparation" name="score-preparation" value="score-preparation" type="checkbox">
+                    <label for="music-production">Music Production</label>
+                    <input id="music-production" name="music-production" value="music-production" type="checkbox">
+                    <label for="mixing-final-delivery">Mixing and Final Delivery</label>
+                    <input id="mixing-final-delivery" name="mixing-final-delivery" value="mixing-final-delivery" type="checkbox">
+                </div>
+                <div> <!--Project Details-->
+                    <div>
+                        <label for="number-of-players">Approximate number of players</label>
+                        <input id="number-of-players" name="number-of-players" type="number" placeholder="eg. 24" required>
+                    </div>
+                    <div>
+                        <label for="preferred-date">Preferred date</label>
+                        <input id="preferred-date" name="preferred-date" type="date" placeholder="dd/mm/yyyy" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="file-upload">Upload any relevant files</label>
+                    <input id="file-upload" name="file-upload" type="file" multiple>
+                </div>
+                <div> <!--Message-->
+                    <label for="message">Tell us about the music</label>
+                    <textarea id="message" name="message" placeholder="Write whatever helps us picture it." required></textarea>
+                </div>
+                <button class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 transition-color" type="submit">Send <span class="btn__beam group-hover:w-8"></span></button>
             </form>
         </div>
     </div>
