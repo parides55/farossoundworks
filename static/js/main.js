@@ -12,7 +12,21 @@
         }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
         reveals.forEach(el => io.observe(el));
     }
+
+    /* ---------- contact form: quote / message modes ---------- */
+    const form = document.querySelector('#contact-form');
+    if (form) {
+        const modeBtns = form.querySelectorAll('.mode-btn');
+        const typeField = form.querySelector('#inquiryType');
+        modeBtns.forEach(b => b.addEventListener('click', () => {
+            modeBtns.forEach(x => x.classList.remove('active'));
+            b.classList.add('active');
+            const mode = b.dataset.mode;
+            form.classList.toggle('show', mode === 'quote');
+            if (typeField) typeField.value = mode === 'quote' ? 'Quote request' : 'General inquiry';
+        }));
+    }
     
 })();
-    
+
 
