@@ -18,6 +18,9 @@ app.config['MAIL_USE_SSL'] = False
 
 mail = Mail(app)
 
+print("EMAIL:", os.getenv("EMAIL"))
+print("PASSWORD EXISTS:", bool(os.getenv("PASSWORD")))
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -52,21 +55,26 @@ def form_submit():
     email = request.form.get("email")
     message = request.form.get("message")
 
-    msg = Message(
-        subject = inquiry_type, 
-        body = f"Name: {name}\nEmail: {email}\n\n{message}",
-        recipients = [os.getenv('EMAIL')]
-    )
-    
-    response_msg = Message (
-        subject = "Thank you for contacting Faros Soundworks",
-        body = f"Hi {name}\n\nWe have received your message and we will response shortly.\n\nHere is what you wrote to us:\n{message}",
-        recipients = [email],
-    )
-    mail.send(msg)
-    mail.send(response_msg)
-    return redirect ('/')
+    try:
+        msg = Message(
+            subject = inquiry_type, 
+            body = f"Name: {name}\nEmail: {email}\n\n{message}",
+            recipients = [os.getenv('EMAIL')]
+        )
+        
+        response_msg = Message (
+            subject = "Thank you for contacting Faros Soundworks",
+            body = f"Hi {name}\n\nWe have received your message and we will response shortly.\n\nHere is what you wrote to us:\n{message}",
+            recipients = [email],
+        )
+        mail.send(msg)
+        mail.send(response_msg)
+        return redirect ('/')
 
+    except Exception as e:
+        print("EMAIL ERROR:", e)
+
+        return "Unable to send email.", 500
 
 # ensures your Flask dev server only starts when you run the file directly, not when it's imported elsewhere.
 if __name__ == "__main__":
