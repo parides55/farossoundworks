@@ -247,6 +247,9 @@
   .-mx-3 {
     margin-inline: calc(var(--spacing) * -3);
   }
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -267,9 +270,6 @@
   }
   .me-1 {
     margin-inline-end: var(--spacing);
-  }
-  .me-6 {
-    margin-inline-end: calc(var(--spacing) * 6);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -459,6 +459,9 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
