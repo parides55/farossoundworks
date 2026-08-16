@@ -38,25 +38,25 @@
             </aside>
         </div>
         <!--Form-->
-        <div class="m-2" class="reveal" data-delay='3'>
+        <div class="me-6 my-5" class="reveal" data-delay='3'>
             <form action="">
                 <div class="flex gap-4"> <!--Mode buttons-->
                     <button type="button" class="mode-btn grow active">QUICK MESSAGE</button>
                     <button type="button" class="mode-btn grow">REQUEST A QUOTE</button>
                 </div>
-                <div> <!--Name and Email-->
-                    <div class="field">
+                <div class="flex gap-4 my-5"> <!--Name and Email-->
+                    <div class="field w-full">
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text" required>
                     </div>
-                    <div class="field">
+                    <div class="field w-full">
                         <label for="email">Email</label>
                         <input id="email" name="email" type="email" required>
                     </div>
                 </div>
                 <div> <!--Project Type-->
                     <fieldset>
-                        <legend>Type of project</legend>
+                        <legend>Select type of project</legend>
                         <div class="flex flex-col md:grid md:grid-cols-2">
                             <div class="flex flex-col justify-items-center col-start-1">
                                 <div class="flex flex-row justify-around">
@@ -101,12 +101,12 @@
                         </div>
                     </fieldset>
                 </div>
-                <div> <!--Project Details-->
-                    <div class="field">
+                <div class="flex gap-4 my-5"> <!--Project Details-->
+                    <div class="field w-full">
                         <label for="number-of-players">Approximate number of players</label>
                         <input id="number-of-players" name="number-of-players" type="number" placeholder="eg. 24" required>
                     </div>
-                    <div class="field">
+                    <div class="field w-full">
                         <label for="preferred-date">Preferred date</label>
                         <input id="preferred-date" name="preferred-date" type="date" placeholder="dd/mm/yyyy" required>
                     </div>
@@ -115,7 +115,7 @@
                     <label for="file-upload">Upload any relevant files</label>
                     <input id="file-upload" name="file-upload" type="file" multiple>
                 </div>
-                <div class="field"> <!--Message-->
+                <div class="field my-5"> <!--Message-->
                     <label for="message">Tell us about the music</label>
                     <textarea id="message" name="message" placeholder="Write whatever helps us picture it." required></textarea>
                 </div>
