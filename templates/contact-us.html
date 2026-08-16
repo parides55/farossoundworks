@@ -45,55 +45,81 @@
                     <button type="button" class="mode-btn grow">REQUEST A QUOTE</button>
                 </div>
                 <div> <!--Name and Email-->
-                    <div>
+                    <div class="field">
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text" required>
                     </div>
-                    <div>
+                    <div class="field">
                         <label for="email">Email</label>
                         <input id="email" name="email" type="email" required>
                     </div>
                 </div>
                 <div> <!--Project Type-->
-                    <legend for="project-type">Type of project</legend>
-                    <label for="orchestral">Orchestral Recording</label>
-                    <input id="orchestral" name="orchestral" value="orchestral" type="checkbox">
-                    <label for="composition">Composition</label>
-                    <input id="composition" name="composition" value="composition" type="checkbox">
-                    <label for="arrangement">Arrangement</label>
-                    <input id="arrangement" name="arrangement" value="arrangement" type="checkbox">
-                    <label for="orchestration">Orchestration</label>
-                    <input id="orchestration" name="orchestration" value="orchestration" type="checkbox">
-                    <label for="music-direction">Music Direction</label>
-                    <input id="music-direction" name="music-direction" value="music-direction" type="checkbox">
-                    <label for="midi-mockups">MIDI Mockups</label>
-                    <input id="midi-mockups" name="midi-mockups" value="midi-mockups" type="checkbox">
-                    <label for="score-preparation">Score Preparation</label>
-                    <input id="score-preparation" name="score-preparation" value="score-preparation" type="checkbox">
-                    <label for="music-production">Music Production</label>
-                    <input id="music-production" name="music-production" value="music-production" type="checkbox">
-                    <label for="mixing-final-delivery">Mixing and Final Delivery</label>
-                    <input id="mixing-final-delivery" name="mixing-final-delivery" value="mixing-final-delivery" type="checkbox">
+                    <fieldset>
+                        <legend>Type of project</legend>
+                        <div class="flex flex-col md:grid md:grid-cols-2">
+                            <div class="flex flex-col justify-items-center col-start-1">
+                                <div class="flex flex-row justify-around">
+                                    <label for="orchestral">Orchestral Recording</label>
+                                    <input id="orchestral" name="orchestral" value="orchestral" type="checkbox">
+                                </div>
+                                <div class="flex flex-row justify-around">
+                                    <label for="composition">Composition</label>
+                                    <input id="composition" name="composition" value="composition" type="checkbox">
+                                </div>
+                                <div class="flex flex-row justify-around">
+                                    <label for="arrangement">Arrangement</label>
+                                    <input id="arrangement" name="arrangement" value="arrangement" type="checkbox">
+                                </div>
+                                <div class="flex flex-row justify-around">
+                                    <label for="orchestration">Orchestration</label>
+                                    <input id="orchestration" name="orchestration" value="orchestration" type="checkbox">
+                                </div>
+                                <div class="flex flex-row justify-around">
+                                    <label for="music-direction">Music Direction</label>
+                                    <input id="music-direction" name="music-direction" value="music-direction" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-items-center col-start-2">
+                                <div class="flex flex-row justify-around">
+                                    <label for="midi-mockups">MIDI Mockups</label>
+                                    <input id="midi-mockups" name="midi-mockups" value="midi-mockups" type="checkbox">
+                                </div>
+                                <div class="flex flex-row justify-around">
+                                    <label for="score-preparation">Score Preparation</label>
+                                    <input id="score-preparation" name="score-preparation" value="score-preparation" type="checkbox">
+                                </div>
+                                <div class="flex flex-row justify-around">
+                                    <label for="music-production">Music Production</label>
+                                    <input id="music-production" name="music-production" value="music-production" type="checkbox">
+                                </div>
+                                <div class="flex flex-row justify-around">
+                                    <label for="mixing-final-delivery">Mixing and Final Delivery</label>
+                                    <input id="mixing-final-delivery" name="mixing-final-delivery" value="mixing-final-delivery" type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
                 </div>
                 <div> <!--Project Details-->
-                    <div>
+                    <div class="field">
                         <label for="number-of-players">Approximate number of players</label>
                         <input id="number-of-players" name="number-of-players" type="number" placeholder="eg. 24" required>
                     </div>
-                    <div>
+                    <div class="field">
                         <label for="preferred-date">Preferred date</label>
                         <input id="preferred-date" name="preferred-date" type="date" placeholder="dd/mm/yyyy" required>
                     </div>
                 </div>
-                <div>
+                <div class="field">
                     <label for="file-upload">Upload any relevant files</label>
                     <input id="file-upload" name="file-upload" type="file" multiple>
                 </div>
-                <div> <!--Message-->
+                <div class="field"> <!--Message-->
                     <label for="message">Tell us about the music</label>
                     <textarea id="message" name="message" placeholder="Write whatever helps us picture it." required></textarea>
                 </div>
-                <button class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 transition-color" type="submit">Send <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]" class="btn__beam group-hover:w-8"></span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]"></button>
+                <button class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 transition-color" type="submit">Send <span class="btn__beam group-hover:w-8"></span></button>
             </form>
         </div>
     </div>

@@ -232,6 +232,12 @@
   .z-50 {
     z-index: 50;
   }
+  .col-start-1 {
+    grid-column-start: 1;
+  }
+  .col-start-2 {
+    grid-column-start: 2;
+  }
   .-m-1\.5 {
     margin: calc(var(--spacing) * -1.5);
   }
@@ -332,17 +338,26 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-items-center {
+    justify-items: center;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -595,6 +610,12 @@
     .md\:ms-10 {
       margin-inline-start: calc(var(--spacing) * 10);
     }
+    .md\:grid {
+      display: grid;
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
   @media (width >= 64rem) {
     .lg\:col-start-2 {
@@ -715,6 +736,37 @@
     background: var(--color-ink);
     color: var(--color-paper);
     border-color: var(--color-ink);
+  }
+  .field {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .field label {
+    font-family: var(--color-label);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+  .field input, .field textarea, fieldset {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-ink);
+    background: var(--color-paper);
+    border: 1px solid var(--color-line);
+    border-radius: 3px;
+    padding: 0.95rem 1.1rem;
+    width: 100%;
+    transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .field input:focus, .field textarea:focus {
+    outline: none;
+    border-color: var(--color-slate);
+    box-shadow: 0 0 0 3px rgba(58, 74, 90, 0.12);
+  }
+  .field textarea {
+    resize: vertical;
+    min-height: 130px;
   }
   .eyebrow {
     font-family: var(--font-label);
