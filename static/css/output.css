@@ -609,8 +609,8 @@
     .lg\:col-end-6 {
       grid-column-end: 6;
     }
-    .lg\:ms-20 {
-      margin-inline-start: calc(var(--spacing) * 20);
+    .lg\:ms-6 {
+      margin-inline-start: calc(var(--spacing) * 6);
     }
     .lg\:flex {
       display: flex;
@@ -626,6 +626,9 @@
     }
     .lg\:grid-cols-6 {
       grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
     .lg\:gap-x-12 {
       column-gap: calc(var(--spacing) * 12);
