@@ -571,6 +571,9 @@
       --tw-translate-y: calc(var(--spacing) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    .hover\:cursor-pointer:hover {
+      cursor: pointer;
+    }
     .hover\:border-ink:hover {
       border-color: var(--color-ink);
     }
@@ -770,6 +773,12 @@
   .field textarea {
     resize: vertical;
     min-height: 130px;
+  }
+  .hide {
+    display: none;
+  }
+  #form.show .hide {
+    display: grid;
   }
   .eyebrow {
     font-family: var(--font-label);
