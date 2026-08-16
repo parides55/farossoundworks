@@ -111,8 +111,11 @@
         resize: vertical;
         min-height: 130px;
     }
-    .hide {
+    .quote-only {
         display: none;
+    }
+    .form.mode-quote .quote-only {
+        display: grid;
     }
     .eyebrow {
         font-family: var(--font-label);

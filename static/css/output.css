@@ -774,10 +774,10 @@
     resize: vertical;
     min-height: 130px;
   }
-  .hide {
+  .quote-only {
     display: none;
   }
-  #form.show .hide {
+  .form.mode-quote .quote-only {
     display: grid;
   }
   .eyebrow {

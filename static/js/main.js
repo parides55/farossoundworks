@@ -14,7 +14,7 @@
     }
 
     /* ---------- contact form: quote / message modes ---------- */
-    const form = document.querySelector('#contact-form');
+    const form = document.querySelector('.form');
     if (form) {
         const modeBtns = form.querySelectorAll('.mode-btn');
         const typeField = form.querySelector('#inquiryType');
@@ -22,7 +22,7 @@
             modeBtns.forEach(x => x.classList.remove('active'));
             b.classList.add('active');
             const mode = b.dataset.mode;
-            form.classList.toggle('show', mode === 'quote');
+            form.classList.toggle('mode-quote', mode === 'quote');
             if (typeField) typeField.value = mode === 'quote' ? 'Quote request' : 'General inquiry';
         }));
     }

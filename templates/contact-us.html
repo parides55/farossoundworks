@@ -39,7 +39,7 @@
         </div>
         <!--Form-->
         <div class="mx-6 px-8 my-5" class="reveal" data-delay='3'>
-            <form id="contact-form" action="POST">
+            <form class="form" action="POST">
                 <div class="flex gap-4"> <!--Mode buttons-->
                     <button type="button" class="mode-btn hover:cursor-pointer grow active" data-mode="message">QUICK MESSAGE</button>
                     <button type="button" class="mode-btn hover:cursor-pointer grow" data-mode="quote">REQUEST A QUOTE</button>
@@ -57,7 +57,7 @@
                         <input id="email" name="email" type="email" required>
                     </div>
                 </div>
-                <div class="hide"> <!--Project Type-->
+                <div class="quote-only"> <!--Project Type-->
                     <fieldset>
                         <legend>Select type of project</legend>
                         <div class="flex flex-col md:grid md:grid-cols-2">
@@ -105,16 +105,16 @@
                     </fieldset>
                 </div>
                 <div class="flex gap-4 my-5"> <!--Project Details-->
-                    <div class="hide field w-full">
+                    <div class="quote-only field w-full">
                         <label for="number-of-players">Approximate number of players</label>
                         <input id="number-of-players" name="number-of-players" type="number" placeholder="eg. 24" required>
                     </div>
-                    <div class="hide field w-full">
+                    <div class="quote-only field w-full">
                         <label for="preferred-date">Preferred date</label>
                         <input id="preferred-date" name="preferred-date" type="date" placeholder="dd/mm/yyyy" required>
                     </div>
                 </div>
-                <div class="hide field"> <!--File upload-->
+                <div class="quote-only field"> <!--File upload-->
                     <label for="file-upload">Upload any relevant files</label>
                     <input id="file-upload" name="file-upload" type="file" multiple>
                 </div>
