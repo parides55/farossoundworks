@@ -1,11 +1,22 @@
-import os
 from flask import Flask, render_template, request, redirect, url_for
+from flask_mail import Mail, Message
+import os
 if os.path.exists('env.py'):
     import env
 
 
 app = Flask(__name__)
 
+# Email setup settings
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = os.getenv('EMAIL')
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv('EMAIL')
+app.config['MAIL_PASSWORD'] = os.getenv('PASSWORD')
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+
+mail = Mail(app)
 
 @app.route('/')
 def index():
@@ -30,6 +41,31 @@ def services():
 @app.route('/contact-us')
 def contact_us():   
     return render_template('contact-us.html')
+
+@app.route('/form_submit', methods=["POST"])
+def form_submit():
+
+    print(request.form)
+
+    inquiry_type = request.form.get('inquiryType')
+    name = request.form.get("name")
+    email = request.form.get("email")
+    message = request.form.get("message")
+
+    msg = Message(
+        subject = inquiry_type, 
+        body = f"Name: {name}\nEmail: {email}\n\n{message}",
+        recipients = [os.getenv('EMAIL')]
+    )
+    
+    response_msg = Message (
+        subject = "Thank you for contacting Faros Soundworks",
+        body = f"Hi {name}\n\nWe have received your message and we will response shortly.\n\nHere is what you wrote to us:\n{message}",
+        recipients = [email],
+    )
+    mail.send(msg)
+    mail.send(response_msg)
+    return redirect ('/')
 
 
 # ensures your Flask dev server only starts when you run the file directly, not when it's imported elsewhere.
