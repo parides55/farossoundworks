@@ -62,7 +62,6 @@
         transition: width .4s var(--ease);
     }
     .mode-btn {
-        flex: 1;
         font-family: var(--font-label);
         font-size: 0.74rem;
         letter-spacing: 0.14em;

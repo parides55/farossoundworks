@@ -323,11 +323,11 @@
   .w-screen {
     width: 100vw;
   }
+  .grow {
+    flex-grow: 1;
+  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .flex-col {
-    flex-direction: column;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -340,9 +340,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .gap-1 {
-    gap: var(--spacing);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -677,7 +674,6 @@
     transition: width .4s var(--ease);
   }
   .mode-btn {
-    flex: 1;
     font-family: var(--font-label);
     font-size: 0.74rem;
     letter-spacing: 0.14em;
