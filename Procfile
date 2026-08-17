@@ -1,1 +1,1 @@
-web: gunicorn farossoundworks.wsgi
+web: gunicorn run:app
