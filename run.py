@@ -18,9 +18,6 @@ app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
 
-print("EMAIL:", os.getenv("EMAIL"))
-print("PASSWORD EXISTS:", bool(os.getenv("PASSWORD")))
-
 @app.route('/')
 def index():
     return render_template('index.html')
