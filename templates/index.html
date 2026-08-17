@@ -23,20 +23,41 @@
 
     <!-- ============ OUR SERVICES  ============ -->
     <section class="section bg-paper-warm">
-        <div class="grid grid-cols-6">
-            <div class="section-head col-start-2 col-end-3">
+        <div class="md:grid md:grid-cols-6 mx-8 md:mx-3 reveal">
+            <div class="section-head md:col-start-2 md:col-end-5 space-y-3 my-6">
                 <p class="eyebrow">What we do</p>
                 <h2 class="h-section">Services</h2>
                 <p class="lede">From composition support to the final master, we cover the full arc of a recording.</p>
             </div>
-            <div class="col-start-2 col-end-4">
-                <div>
-                    <span>01</span>
+            <div class="md:col-start-2 md:col-end-6 my-6 reveal">
+                <div class="space-y-3">
+                    <span class="service__mark">01</span>
                     <div>
                         <h3>Orchestral Recording</h3>
-                        <p>Live tracking for orchestras, choirs, and chamber groups with careful room and spot micing.</p>
+                        <p>Professional recording sessions that capture the full depth and dynamic range of live orchestral performances.</p>
                     </div>
                 </div>
+            </div>
+            <div class="md:col-start-2 md:col-end-6 my-6 reveal">
+                <div class="space-y-3">
+                    <span class="service__mark">02</span>
+                    <div>
+                        <h3>Composition</h3>
+                        <p>Original music written from the ground up to fit your vision, medium, and emotional intent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-start-2 md:col-end-6 my-6 reveal">
+                <div class="space-y-3">
+                    <span class="service__mark">03</span>
+                    <div>
+                        <h3>Arrangement</h3>
+                        <p>Transforming your melody or existing piece into a fully realized arrangement across any ensemble or style.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-start-2 md:col-end-4 my-6 reveal">
+                <a class="group btn bg-paper text-ink hover:bg-ink hover:text-paper hover:-translate-y-1 transition-colors reveal" href="{{ url_for('services') }}">All our services <span class="btn__beam group-hover:w-8"></span></a>
             </div>
         </div>
     </section>
