@@ -1,1 +1,1 @@
-web: gunicorn cardiac_association.wsgi
+web: gunicorn farossoundworks.wsgi
