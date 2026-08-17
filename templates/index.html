@@ -2,7 +2,8 @@
 
 {% block content %}
 
-    <section class="h-screen w-screen mb-16"> <!--Hero section-->
+<!-- ============ HERO ============ -->
+    <section class="h-screen w-screen mb-16">
         <img class="object-cover w-full h-full opacity-60" src="{{ url_for('static', filename='images/hero-image-test.png' ) }}" alt="Hero image">
         <div class="space-y-4 absolute inset-y-1/3 inset-x-1/8 reveal">
             <div>
@@ -20,8 +21,24 @@
         <h2 class="h-section reveal">Who we are</h2>
     </section>
 
-    <section class="section bg-paper-warm"><!--What we do Section-->
-        <h2 class="h-section reveal">What we do</h2>
+    <!-- ============ OUR SERVICES  ============ -->
+    <section class="section bg-paper-warm">
+        <div class="grid grid-cols-6">
+            <div class="section-head col-start-2 col-end-3">
+                <p class="eyebrow">What we do</p>
+                <h2 class="h-section">Services</h2>
+                <p class="lede">From composition support to the final master, we cover the full arc of a recording.</p>
+            </div>
+            <div class="col-start-2 col-end-4">
+                <div>
+                    <span>01</span>
+                    <div>
+                        <h3>Orchestral Recording</h3>
+                        <p>Live tracking for orchestras, choirs, and chamber groups with careful room and spot micing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="section"><!--Our work Section-->
