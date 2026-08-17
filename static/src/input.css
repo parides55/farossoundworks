@@ -23,11 +23,14 @@
 }
 
 @layer base {
-    h1, h2, h3 {
+    h1, h2 {
         font-family: var(--font-display);
         font-weight: 500;
         line-height:1.04;
         letter-spacing: -0.01em;
+    }
+    h3 {
+        font-size: clamp(1.6rem, 3vw, 2.3rem);
     }
 }
 
@@ -80,6 +83,14 @@
         background: var(--color-ink);
         color: var(--color-paper);
         border-color: var(--color-ink);
+    }
+    .service__mark {
+        font-family: var(--font-label);
+        font-size: 0.7rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--color-slate);
+        padding-top: 0.4rem;
     }
     .field {
         display: grid;
