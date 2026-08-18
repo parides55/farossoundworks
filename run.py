@@ -45,32 +45,89 @@ def contact_us():
 @app.route('/form_submit', methods=["POST"])
 def form_submit():
 
-    print(request.form)
-
     inquiry_type = request.form.get('inquiryType')
     name = request.form.get("name")
     email = request.form.get("email")
     message = request.form.get("message")
 
+    # Quote-only fields
+    project_types = request.form.getlist("orchestral") \
+        + request.form.getlist("composition") \
+        + request.form.getlist("arrangement") \
+        + request.form.getlist("orchestration") \
+        + request.form.getlist("music-direction") \
+        + request.form.getlist("midi-mockups") \
+        + request.form.getlist("score-preparation") \
+        + request.form.getlist("music-production") \
+        + request.form.getlist("mixing-final-delivery")
+
+    number_of_players = request.form.get("number-of-players")
+    preferred_date = request.form.get("preferred-date")
+
+    # Handle file uploads
+    uploaded_files = request.files.getlist("file-upload")
+
+    is_quote = inquiry_type == "Quote request" or bool(project_types)
+
     try:
+        # --- Email to you (admin) ---
+        admin_html = f"""\
+        <h2>{inquiry_type}</h2>
+        <p><strong>Name:</strong> {name}</p>
+        <p><strong>Email:</strong> <a href="mailto:{email}">{email}</a></p>
+        """
+
+        if is_quote:
+            admin_html += f"""
+            <p><strong>Project type(s):</strong> {", ".join(project_types) or "—"}</p>
+            <p><strong>Approx. number of players:</strong> {number_of_players or "—"}</p>
+            <p><strong>Preferred date:</strong> {preferred_date or "—"}</p>
+            """
+
+        admin_html += f"""
+        <p><strong>Message:</strong></p>
+        <p>{message}</p>
+        """
+
         msg = Message(
-            subject = inquiry_type, 
-            body = f"Name: {name}\nEmail: {email}\n\n{message}",
-            recipients = [os.getenv('EMAIL')]
+            subject=inquiry_type,
+            recipients=[os.getenv('EMAIL')],
+            html=admin_html,
+            reply_to=email,
         )
-        
-        response_msg = Message (
-            subject = "Thank you for contacting Faros Soundworks",
-            body = f"Hi {name}\n\nWe have received your message and we will response shortly.\n\nHere is what you wrote to us:\n{message}",
-            recipients = [email],
+
+        # Attach uploaded files
+        for f in uploaded_files:
+            if f and f.filename:
+                msg.attach(
+                    filename=f.filename,
+                    content_type=f.content_type,
+                    data=f.read(),
+                )
+
+        # --- Confirmation email to user ---
+        user_html = f"""\
+        <p>Hi {name},</p>
+        <p>We have received your message and will respond shortly.</p>
+        <p>Here is what you wrote to us:</p>
+        <blockquote style="border-left:3px solid #ccc; padding-left:1em; color:#555;">
+            {message}
+        </blockquote>
+        <p>— Faros Soundworks</p>
+        """
+
+        response_msg = Message(
+            subject="Thank you for contacting Faros Soundworks",
+            recipients=[email],
+            html=user_html,
         )
+
         mail.send(msg)
         mail.send(response_msg)
-        return redirect ('/')
+        return redirect('/')
 
     except Exception as e:
         print("EMAIL ERROR:", e)
-
         return "Unable to send email.", 500
 
 # ensures your Flask dev server only starts when you run the file directly, not when it's imported elsewhere.
