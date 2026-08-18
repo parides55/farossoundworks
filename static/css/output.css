@@ -268,9 +268,6 @@
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
-  .ms-5 {
-    margin-inline-start: calc(var(--spacing) * 5);
-  }
   .ms-6 {
     margin-inline-start: calc(var(--spacing) * 6);
   }
@@ -637,9 +634,6 @@
     .md\:mx-6 {
       margin-inline: calc(var(--spacing) * 6);
     }
-    .md\:ms-10 {
-      margin-inline-start: calc(var(--spacing) * 10);
-    }
     .md\:grid {
       display: grid;
     }
@@ -666,8 +660,8 @@
     .lg\:col-end-6 {
       grid-column-end: 6;
     }
-    .lg\:ms-6 {
-      margin-inline-start: calc(var(--spacing) * 6);
+    .lg\:col-end-7 {
+      grid-column-end: 7;
     }
     .lg\:flex {
       display: flex;
