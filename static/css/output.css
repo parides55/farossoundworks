@@ -918,6 +918,9 @@
   .section {
     padding-block: clamp(4.5rem, 10vw, 9rem);
   }
+  .section-smaller {
+    padding-block: clamp(2.25rem, 5vw, 4.5rem);
+  }
   .h-display {
     font-size: clamp(3rem, 8vw, 6.5rem);
   }
