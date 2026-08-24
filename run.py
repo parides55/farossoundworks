@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
+from flask_babel import Babel, _
 from flask_mail import Mail, Message
 import os
 if os.path.exists('env.py'):
@@ -6,6 +7,32 @@ if os.path.exists('env.py'):
 
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
+
+app.config['BABEL_DEFAULT_LOCALE'] = 'en'   # default language
+app.config['BABEL_SUPPORTED_LOCALES'] = ['en', 'es']  # add your languages
+
+
+# Locale selector function
+def get_locale():
+    # First check session
+    if 'lang' in session:
+        return session['lang']
+    # Fallback to browser preference
+    return request.accept_languages.best_match(app.config['BABEL_SUPPORTED_LOCALES'])
+
+
+# Pass it into Babel
+babel = Babel(app, locale_selector=get_locale)
+
+
+# Route to change language
+@app.route('/set_language/<lang_code>')
+def set_language(lang_code):
+    if lang_code in app.config['BABEL_SUPPORTED_LOCALES']:
+        session['lang'] = lang_code
+    return redirect(request.referrer or url_for('index'))
+
 
 # Email setup settings
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -17,6 +44,7 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
+
 
 @app.route('/')
 def index():
