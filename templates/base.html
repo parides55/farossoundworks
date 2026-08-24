@@ -37,12 +37,16 @@
             </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-            <a href="{{ url_for('index') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">Home</a>
-            <a href="{{ url_for('work') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">Our Work</a>
-            <a href="{{ url_for('services') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">Our Services</a>
-            <a href="{{ url_for('facilities') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">Facilities</a>
-
-            <a href="{{ url_for('contact_us') }}" class="font-label text-xs uppercase tracking-widest border-2 border-2xl border-solid px-3 py-2 transition hover:-translate-y-1 hover:border-ink">Get in touch <span aria-hidden="true">&rarr;</span></a>
+                <a href="{{ url_for('index') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">{{ _('Home') }}</a>
+                <a href="{{ url_for('work') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">{{ _('Our Work') }}</a>
+                <a href="{{ url_for('services') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">{{ _('Our Services') }}</a>
+                <a href="{{ url_for('facilities') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">{{ _('Facilities') }}</a>
+                <a href="{{ url_for('contact_us') }}" class="font-label text-xs uppercase tracking-widest border-2 border-2xl border-solid px-3 py-2 transition hover:-translate-y-1 hover:border-ink">{{ _('Get in touch') }} <span aria-hidden="true">&rarr;</span></a>
+                <div class="inline-block">
+                    <a href="{{ url_for('set_language', lang_code='en') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">ENG</a>
+                    |
+                    <a href="{{ url_for('set_language', lang_code='es') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">ESP</a>
+                </div>    
             </div>
         </nav>
         <el-dialog>
@@ -64,14 +68,19 @@
                         <div class="mt-6 flow-root">
                             <div class="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
                                 <div class="space-y-2 py-6">
-                                    <a href="{{ url_for('index') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">Home</a>
-                                    <a href="{{ url_for('work') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">Our Work</a>
-                                    <a href="{{ url_for('services') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">Our Services</a>
-                                    <a href="{{ url_for('facilities') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">Facilities</a>
+                                    <a href="{{ url_for('index') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">{{ _('Home') }}</a>
+                                    <a href="{{ url_for('work') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">{{ _('Our Work') }}</a>
+                                    <a href="{{ url_for('services') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">{{ _('Our Services') }}</a>
+                                    <a href="{{ url_for('facilities') }}" class="-mx-3 block px-3 py-2 font-label text-xs tracking-widest uppercase transition">{{ _('Facilities') }}</a>
                                 </div>
                                 <div class="py-6">
-                                    <a href="{{ url_for('contact_us') }}" class="-mx-3 block px-3 py-2.5 font-label text-xs tracking-widest uppercase border-2 border-2xl border-solid">GET IN TOUCH<span aria-hidden="true">&rarr;</span></a>
+                                    <a href="{{ url_for('contact_us') }}" class="-mx-3 block px-3 py-2.5 font-label text-xs tracking-widest uppercase border-2 border-2xl border-solid">{{ _('Get in touch') }}<span aria-hidden="true">&rarr;</span></a>
                                 </div>
+                                <div class="inline-block">
+                                    <a href="{{ url_for('set_language', lang_code='en') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">ENG</a>
+                                    |
+                                    <a href="{{ url_for('set_language', lang_code='es') }}" class="font-label text-xs uppercase tracking-widest px-3 py-2 transition hover:italic">ESP</a>
+                                </div> 
                             </div>
                         </div>
                     </el-dialog-panel>
@@ -88,11 +97,11 @@
     <footer class="bg-slate-deep">
         <div class="mx-auto max-w-auto overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
             <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
-                <a href="{{ url_for('index') }}" class="text-paper hover:text-paper-warm">Home</a>
-                <a href="{{ url_for('work') }}" class="text-paper hover:text-paper-warm">Our Work</a>
-                <a href="{{ url_for('services') }}" class="text-paper hover:text-paper-warm">Our Services</a>
-                <a href="{{ url_for('facilities') }}" class="text-paper hover:text-paper-warm">Facilities</a>
-                <a href="{{ url_for('contact_us') }}" class="text-paper hover:text-paper-warm">Get in touch</a>
+                <a href="{{ url_for('index') }}" class="text-paper hover:text-paper-warm">{{ _('Home') }}</a>
+                <a href="{{ url_for('work') }}" class="text-paper hover:text-paper-warm">{{ _('Our Work') }}</a>
+                <a href="{{ url_for('services') }}" class="text-paper hover:text-paper-warm">{{ _('Our Services') }}</a>
+                <a href="{{ url_for('facilities') }}" class="text-paper hover:text-paper-warm">{{ _('Facilities') }}</a>
+                <a href="{{ url_for('contact_us') }}" class="text-paper hover:text-paper-warm">{{ _('Get in touch')}}</a>
             </nav>
             <div class="mt-16 flex justify-center gap-x-10">
                 <a href="#" class="text-paper hover:text-paper-warm">

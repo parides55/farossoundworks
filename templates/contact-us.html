@@ -4,9 +4,9 @@
 <!--Hero Contact Section-->
 <section class="section lg:grid lg:grid-cols-12">
     <div class="ms-6 px-8 me-1 lg:col-start-2 lg:col-end-7 space-y-3 reveal">
-        <p class="eyebrow">contact</p>
-        <h1 class="h-display">Let's talk</h1>
-        <p class="lede">Request a quote for a session, or just send a quick message. We usually reply within two working days.</p>
+        <p class="eyebrow">{{ _('contact') }}</p>
+        <h1 class="h-display">{{ _("Let's talk") }}</h1>
+        <p class="lede">{{ _("Request a quote for a session, or just send a quick message. We usually reply within two working days.") }}</p>
     </div>
 </section>
 
@@ -15,24 +15,24 @@
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 reveal">
         <div class="ms-6 px-8 my-5"> <!--Details-->
             <aside class="lg:grid lg:grid-cols-6">
-                <p class="eyebrow lg:col-start-2 lg:col-end-4">Direct</p>
-                <h2 class="h-section lg:col-start-2 lg:col-end-6">Prefer to reach us straight away?</h2>
+                <p class="eyebrow lg:col-start-2 lg:col-end-4">{{ _('Direct') }}</p>
+                <h2 class="h-section lg:col-start-2 lg:col-end-6">{{ _('Prefer to reach us straight away?') }}</h2>
                 <div class="space-y-8 my-8 lg:col-start-2 lg:col-end-5 reveal" data-delay='2'>
                     <div class="flex flex-col gap-2">
-                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] tracking-[0.2rem]">Email</span>
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] tracking-[0.2rem]">{{ _("Email") }}</span>
                         <a href="mailto:info@farossoundworks.com">info@farossoundworks.com</a>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">Phone</span>
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">{{ _("Phone") }}</span>
                         <a href="tel:+441234567890">+44 123 456 7890</a>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">Address</span>
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">{{ _("Address") }}</span>
                         <a href="https://www.google.com/maps/place/Faros+Sound+Works/@51.5074,-0.1278,15z/data=!4m2!3m1!1s0x0:0x0?hl=en" target="_blank" rel="noopener noreferrer">123 Music Street, London</a>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">Office Hours</span>
-                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <span class="text-color-slate uppercase text-font-label text-[0.7rem] text-color-slate tracking-[0.2rem]">{{ _("Office Hours") }}</span>
+                        <p>{{ _("Monday - Friday") }}: 9:00 AM - 5:00 PM</p>
                     </div>
                 </div>
             </aside>
@@ -41,63 +41,63 @@
         <div class="mx-3 md:mx-6 md:px-8 my-5" class="reveal" data-delay='3'>
             <form class="form" action="/form_submit" method="POST">
                 <div class="flex gap-4"> <!--Mode buttons-->
-                    <button type="button" class="mode-btn hover:cursor-pointer grow active" data-mode="message">QUICK MESSAGE</button>
-                    <button type="button" class="mode-btn hover:cursor-pointer grow" data-mode="quote">REQUEST A QUOTE</button>
+                    <button type="button" class="mode-btn hover:cursor-pointer grow active" data-mode="message">{{ _("QUICK MESSAGE") }}</button>
+                    <button type="button" class="mode-btn hover:cursor-pointer grow" data-mode="quote">{{ _("REQUEST A QUOTE") }}</button>
                 </div>
 
                 <input type="hidden" id="inquiryType" name="inquiryType" value="General inquiry">
 
                 <div class="flex gap-4 my-5"> <!--Name and Email-->
                     <div class="field w-full">
-                        <label for="name">Name</label>
+                        <label for="name">{{ _("Name") }}</label>
                         <input id="name" name="name" type="text" required>
                     </div>
                     <div class="field w-full">
-                        <label for="email">Email</label>
+                        <label for="email">{{ _("Email") }}</label>
                         <input id="email" name="email" type="email" required>
                     </div>
                 </div>
                 <div class="quote-only"> <!--Project Type-->
                     <fieldset>
-                        <legend>Select type of project</legend>
+                        <legend>{{ _("Select type of project") }}</legend>
                         <div class="flex flex-col md:grid md:grid-cols-2">
                             <div class="flex flex-col justify-items-center col-start-1">
                                 <div class="flex flex-row justify-around">
-                                    <label for="orchestral">Orchestral Recording</label>
+                                    <label for="orchestral">{{ _("Orchestral Recording") }}</label>
                                     <input id="orchestral" name="orchestral" value="orchestral" type="checkbox">
                                 </div>
                                 <div class="flex flex-row justify-around">
-                                    <label for="composition">Composition</label>
+                                    <label for="composition">{{ _("Composition") }}</label>
                                     <input id="composition" name="composition" value="composition" type="checkbox">
                                 </div>
                                 <div class="flex flex-row justify-around">
-                                    <label for="arrangement">Arrangement</label>
+                                    <label for="arrangement">{{ _("Arrangement") }}</label>
                                     <input id="arrangement" name="arrangement" value="arrangement" type="checkbox">
                                 </div>
                                 <div class="flex flex-row justify-around">
-                                    <label for="orchestration">Orchestration</label>
+                                    <label for="orchestration">{{ _("Orchestration") }}</label>
                                     <input id="orchestration" name="orchestration" value="orchestration" type="checkbox">
                                 </div>
                                 <div class="flex flex-row justify-around">
-                                    <label for="music-direction">Music Direction</label>
+                                    <label for="music-direction">{{ _("Music Direction") }}</label>
                                     <input id="music-direction" name="music-direction" value="music-direction" type="checkbox">
                                 </div>
                             </div>
                             <div class="flex flex-col justify-items-center col-start-2">
                                 <div class="flex flex-row justify-around">
-                                    <label for="midi-mockups">MIDI Mockups</label>
+                                    <label for="midi-mockups">{{ _("MIDI Mockups") }}</label>
                                     <input id="midi-mockups" name="midi-mockups" value="midi-mockups" type="checkbox">
                                 </div>
                                 <div class="flex flex-row justify-around">
-                                    <label for="score-preparation">Score Preparation</label>
+                                    <label for="score-preparation">{{ _("Score Preparation") }}</label>
                                     <input id="score-preparation" name="score-preparation" value="score-preparation" type="checkbox">
                                 </div>
                                 <div class="flex flex-row justify-around">
-                                    <label for="music-production">Music Production</label>
+                                    <label for="music-production">{{ _("Music Production") }}</label>
                                     <input id="music-production" name="music-production" value="music-production" type="checkbox">
                                 </div>
                                 <div class="flex flex-row justify-around">
-                                    <label for="mixing-final-delivery">Mixing and Final Delivery</label>
+                                    <label for="mixing-final-delivery">{{ _("Mixing and Final Delivery") }}</label>
                                     <input id="mixing-final-delivery" name="mixing-final-delivery" value="mixing-final-delivery" type="checkbox">
                                 </div>
                             </div>
@@ -106,23 +106,23 @@
                 </div>
                 <div class="flex gap-4 my-5"> <!--Project Details-->
                     <div class="quote-only field w-full">
-                        <label for="number-of-players">Approximate number of players</label>
+                        <label for="number-of-players">{{ _("Approximate number of players") }}</label>
                         <input id="number-of-players" name="number-of-players" type="number" placeholder="eg. 24">
                     </div>
                     <div class="quote-only field w-full">
-                        <label for="preferred-date">Preferred date</label>
+                        <label for="preferred-date">{{ _("Preferred date") }}</label>
                         <input id="preferred-date" name="preferred-date" type="date" placeholder="dd/mm/yyyy">
                     </div>
                 </div>
                 <div class="quote-only field"> <!--File upload-->
-                    <label for="file-upload">Upload any relevant files</label>
+                    <label for="file-upload">{{ _("Upload any relevant files") }}</label>
                     <input id="file-upload" name="file-upload" type="file" multiple>
                 </div>
                 <div class="field my-5"> <!--Message-->
-                    <label for="message">Tell us about the music</label>
-                    <textarea id="message" name="message" placeholder="Write whatever helps us picture it." required></textarea>
+                    <label for="message">{{ _("Tell us about the music") }}</label>
+                    <textarea id="message" name="message" placeholder="{{ _('Write whatever helps us picture it.') }}" required></textarea>
                 </div>
-                <button class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 hover:cursor-pointer transition-color" type="submit">Send <span class="btn__beam group-hover:w-8"></span></button>
+                <button class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 hover:cursor-pointer transition-color" type="submit">{{ _("Send") }} <span class="btn__beam group-hover:w-8"></span></button>
             </form>
         </div>
     </div>
