@@ -1,0 +1,266 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-08-24 11:29+0300\n"
+"PO-Revision-Date: 2026-08-24 11:34+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: templates/base.html:40 templates/base.html:71 templates/base.html:100
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/base.html:41 templates/base.html:72 templates/base.html:101
+msgid "Our Work"
+msgstr "Nuestro Trabajo"
+
+#: templates/base.html:42 templates/base.html:73 templates/base.html:102
+msgid "Our Services"
+msgstr "Nuestros Servicios"
+
+#: templates/base.html:43 templates/base.html:74 templates/base.html:103
+msgid "Facilities"
+msgstr "Instalaciones"
+
+#: templates/base.html:44 templates/base.html:77 templates/base.html:104
+msgid "Get in touch"
+msgstr "Ponerse en contacto"
+
+#: templates/contact-us.html:7
+msgid "contact"
+msgstr "contacto"
+
+#: templates/contact-us.html:8
+msgid "Let's talk"
+msgstr "Hablemos"
+
+#: templates/contact-us.html:9
+msgid ""
+"Request a quote for a session, or just send a quick message. We usually "
+"reply within two working days."
+msgstr ""
+"Solicita un presupuesto para una sesión, o simplemente envíanos un "
+"mensaje rápido. Normalmente respondemos en un plazo de dos días "
+"laborables."
+
+#: templates/contact-us.html:18
+msgid "Direct"
+msgstr "Directo"
+
+#: templates/contact-us.html:19
+msgid "Prefer to reach us straight away?"
+msgstr "¿Prefieres contactarnos directamente?"
+
+#: templates/contact-us.html:22 templates/contact-us.html:56
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: templates/contact-us.html:26
+msgid "Phone"
+msgstr "Teléfono"
+
+#: templates/contact-us.html:30
+msgid "Address"
+msgstr "Dirección"
+
+#: templates/contact-us.html:34
+msgid "Office Hours"
+msgstr "Horario de oficina"
+
+#: templates/contact-us.html:35
+msgid "Monday - Friday"
+msgstr "Lunes - Viernes"
+
+#: templates/contact-us.html:44
+msgid "QUICK MESSAGE"
+msgstr "MENSAJE RÁPIDO"
+
+#: templates/contact-us.html:45
+msgid "REQUEST A QUOTE"
+msgstr "SOLICITAR PRESUPUESTO"
+
+#: templates/contact-us.html:52
+msgid "Name"
+msgstr "Nombre"
+
+#: templates/contact-us.html:62
+msgid "Select type of project"
+msgstr "Selecciona el tipo de proyecto"
+
+#: templates/contact-us.html:66 templates/index.html:77
+msgid "Orchestral Recording"
+msgstr "Grabación orquestal"
+
+#: templates/contact-us.html:70 templates/index.html:86
+msgid "Composition"
+msgstr "Composición"
+
+#: templates/contact-us.html:74 templates/index.html:95
+msgid "Arrangement"
+msgstr "Arreglo"
+
+#: templates/contact-us.html:78
+msgid "Orchestration"
+msgstr "Orquestación"
+
+#: templates/contact-us.html:82
+msgid "Music Direction"
+msgstr "Dirección musical"
+
+#: templates/contact-us.html:88
+msgid "MIDI Mockups"
+msgstr "Maquetas MIDI"
+
+#: templates/contact-us.html:92
+msgid "Score Preparation"
+msgstr "Preparación de partituras"
+
+#: templates/contact-us.html:96 templates/index.html:11
+msgid "Music Production"
+msgstr "Producción musical"
+
+#: templates/contact-us.html:100
+msgid "Mixing and Final Delivery"
+msgstr "Mezcla y entrega final"
+
+#: templates/contact-us.html:109
+msgid "Approximate number of players"
+msgstr "Número aproximado de músicos"
+
+#: templates/contact-us.html:113
+msgid "Preferred date"
+msgstr "Fecha preferida"
+
+#: templates/contact-us.html:118
+msgid "Upload any relevant files"
+msgstr "Sube cualquier archivo relevante"
+
+#: templates/contact-us.html:122
+msgid "Tell us about the music"
+msgstr "Cuéntanos sobre la música"
+
+#: templates/contact-us.html:123
+msgid "Write whatever helps us picture it."
+msgstr "Escribe todo lo que nos ayude a hacernos una idea."
+
+#: templates/contact-us.html:125
+msgid "Send"
+msgstr "Enviar"
+
+#: templates/index.html:11
+msgid "Orchestral Recording · Spain"
+msgstr "Grabación orquestal · España"
+
+#: templates/index.html:14
+msgid "Hear our work"
+msgstr "Escucha nuestro trabajo"
+
+#: templates/index.html:15 templates/index.html:136
+msgid "Request a quote"
+msgstr "Solicitar presupuesto"
+
+#: templates/index.html:27
+msgid "Who we are"
+msgstr "Quiénes somos"
+
+#: templates/index.html:28
+msgid "The name means lighthouse — and that is the idea."
+msgstr "El nombre significa faro — y esa es la idea."
+
+#: templates/index.html:29
+msgid ""
+"Founded on Spain's coast, Faros Soundworks brings composers, ensembles "
+"and studios a clear, guiding hand through the recording process. Every "
+"session is engineered to sound honest first and polished second, so the "
+"music arrives exactly as it was written to be heard."
+msgstr ""
+"Fundado en la costa de España, Faros Soundworks ofrece a compositores, "
+"agrupaciones y estudios una guía clara y orientadora a lo largo del "
+"proceso de grabación. Cada sesión está diseñada para sonar honesta antes "
+"que pulida, para que la música llegue exactamente como fue escrita para "
+"ser escuchada."
+
+#: templates/index.html:68
+msgid "What we do"
+msgstr "Qué hacemos"
+
+#: templates/index.html:69
+msgid "Services"
+msgstr "Servicios"
+
+#: templates/index.html:70
+msgid ""
+"From composition support to the final master, we cover the full arc of a "
+"recording."
+msgstr ""
+"Desde el apoyo en la composición hasta la masterización final, cubrimos "
+"todo el arco de una grabación."
+
+#: templates/index.html:78
+msgid ""
+"Professional recording sessions that capture the full depth and dynamic "
+"range of live orchestral performances."
+msgstr ""
+"Sesiones de grabación profesionales que capturan toda la profundidad y el"
+" rango dinámico de las interpretaciones orquestales en vivo."
+
+#: templates/index.html:87
+msgid ""
+"Original music written from the ground up to fit your vision, medium, and"
+" emotional intent."
+msgstr ""
+"Música original escrita desde cero para ajustarse a tu visión, medio e "
+"intención emocional."
+
+#: templates/index.html:96
+msgid ""
+"Transforming your melody or existing piece into a fully realized "
+"arrangement across any ensemble or style."
+msgstr ""
+"Transformar tu melodía o pieza existente en un arreglo completamente "
+"realizado para cualquier conjunto o estilo."
+
+#: templates/index.html:101
+msgid "All our services"
+msgstr "Todos nuestros servicios"
+
+#: templates/index.html:109
+msgid "Selected work"
+msgstr "Trabajos seleccionados"
+
+#: templates/index.html:110
+msgid "Listen our work"
+msgstr "Escucha nuestro trabajo"
+
+#: templates/index.html:111
+msgid ""
+"A short selection — the full library of recordings, videos and music "
+"examples lives on the work page."
+msgstr ""
+"Una breve selección — la biblioteca completa de grabaciones, vídeos y "
+"ejemplos musicales se encuentra en la página de trabajo."
+
+#: templates/index.html:133
+msgid "Start a project"
+msgstr "Iniciar un proyecto"
+
+#: templates/index.html:134
+msgid "Tell us what you're making. We'll light the way."
+msgstr "Cuéntanos qué estás creando. Nosotros iluminaremos el camino."
+
+#: templates/index.html:137
+msgid "Tour our studios"
+msgstr "Visita nuestros estudios"
+
