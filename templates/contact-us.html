@@ -39,7 +39,7 @@
         </div>
         <!--Form-->
         <div class="mx-3 md:mx-6 md:px-8 my-5" class="reveal" data-delay='3'>
-            <form class="form" action="/form_submit" method="POST">
+            <form class="form" action="/form_submit" method="POST" enctype="multipart/form-data">
                 <div class="flex gap-4"> <!--Mode buttons-->
                     <button type="button" class="mode-btn hover:cursor-pointer grow active" data-mode="message">{{ _("QUICK MESSAGE") }}</button>
                     <button type="button" class="mode-btn hover:cursor-pointer grow" data-mode="quote">{{ _("REQUEST A QUOTE") }}</button>
