@@ -26,6 +26,32 @@
             if (typeField) typeField.value = mode === 'quote' ? 'Quote request' : 'General inquiry';
         }));
     }
+
+    const input = document.getElementById("file-upload");
+    const store = new DataTransfer();
+    const list = document.getElementById("file-list");
+
+    input.addEventListener("change", () => {
+        // Add newly picked files to our running store
+        for (const file of input.files) {
+            // avoid duplicates by name+size
+            const exists = Array.from(store.files).some(
+                f => f.name === file.name && f.size === file.size
+            );
+            if (!exists) store.items.add(file);
+        }
+
+        // Write the accumulated set back onto the input
+        input.files = store.files;
+
+        // Show current selection
+        list.innerHTML = "";
+        for (const f of store.files) {
+            const li = document.createElement("li");
+            li.textContent = f.name;
+            list.appendChild(li);
+        }
+    });
     
 })();
 

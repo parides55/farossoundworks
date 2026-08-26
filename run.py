@@ -127,11 +127,13 @@ def form_submit():
         # Attach uploaded files
         for f in uploaded_files:
             if f and f.filename:
-                msg.attach(
-                    filename=f.filename,
-                    content_type=f.content_type,
-                    data=f.read(),
-                )
+                file_data = f.read()
+                if file_data:  # skip empty
+                    msg.attach(
+                        filename=f.filename,
+                        content_type=f.content_type or "application/octet-stream",
+                        data=file_data,
+                    )
 
         # --- Confirmation email to user ---
         user_html = f"""\
