@@ -28,30 +28,46 @@
     }
 
     const input = document.getElementById("file-upload");
-    const store = new DataTransfer();
     const list = document.getElementById("file-list");
+    let store = new DataTransfer();
 
     input.addEventListener("change", () => {
-        // Add newly picked files to our running store
         for (const file of input.files) {
-            // avoid duplicates by name+size
             const exists = Array.from(store.files).some(
                 f => f.name === file.name && f.size === file.size
             );
             if (!exists) store.items.add(file);
         }
-
-        // Write the accumulated set back onto the input
         input.files = store.files;
-
-        // Show current selection
-        list.innerHTML = "";
-        for (const f of store.files) {
-            const li = document.createElement("li");
-            li.textContent = f.name;
-            list.appendChild(li);
-        }
+        render();
     });
+
+    function render() {
+        list.innerHTML = "";
+        Array.from(store.files).forEach((f, index) => {
+            const li = document.createElement("li");
+            li.textContent = f.name + " ";
+
+            const btn = document.createElement("button");
+            btn.type = "button";        // prevent form submit
+            btn.textContent = "✕";
+            btn.addEventListener("click", () => removeFile(index));
+
+            li.appendChild(btn);
+            list.appendChild(li);
+        });
+    }
+
+    function removeFile(index) {
+        // Rebuild the store without the removed file
+        const next = new DataTransfer();
+        Array.from(store.files).forEach((f, i) => {
+            if (i !== index) next.items.add(f);
+        });
+        store = next;
+        input.files = store.files;
+        render();
+    }
     
 })();
 
