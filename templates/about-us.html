@@ -2,7 +2,22 @@
 
 {% block content %}
 
-    <h1 class="text-3xl font-bold mb-4 text-center">About us</h1>
-    <p class="text-center">Discover the state-of-the-art studios and equipment we have available for your music production needs.</p>
+    <main class="section isolate">
+    <!-- Hero section -->
+        <div class="relative isolate -z-10 overflow-hidden bg-linear-to-b from-paper pt-14">
+        <div aria-hidden="true" class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-paper shadow-xl ring-1 shadow-paper-warn ring-indigo-50 sm:-mr-80 lg:-mr-96"></div>
+        <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+            <h1 class="h-display max-w-2xl sm:text-7xl lg:col-span-2 xl:col-auto reveal">{{ _("Welcome to Faros Soundworks") }}</h1>
+            <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1 space-y-4 reveal" data-delay="2">
+                <p class="lede">{{ _("Faros Soundworks was founded and is led by Rafaelos Christofi, a composer for audiovisual media, music producer, and sound designer whose career includes projects in film, opera, theatre, and other audiovisual and performing arts productions.") }}</p>
+                <p class="lede">{{ _("Throughout his career, he has collaborated with composers, musicians, and creative teams on projects associated with institutions and organizations such as Dutch National Opera & Ballet, the International Film Festival Rotterdam (IFFR), EUROMUSE, the Oviedo Philharmonic Foundation, and Prime Video.") }}</p>
+            </div>
+            <img src="{{ url_for( 'static', filename='images/rafaelos_christofi.jpg') }}" alt="" class="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5 sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 reveal" data-delay="2"/>
+            </div>
+        </div>
+        <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-white sm:h-32"></div>
+        </div>
+    </main>
 
 {% endblock %}
