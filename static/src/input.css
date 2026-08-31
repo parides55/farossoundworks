@@ -155,11 +155,18 @@
         display: inline-block;
     }
     .lede {
-            font-size: clamp(1.1rem, 1.6vw, 1.3rem);
-            line-height: 1.6;
-            color: var(--ink-soft);
-            max-width: 44ch;
-        }
+        font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+        line-height: 1.6;
+        color: var(--ink-soft);
+        max-width: 44ch;
+    }
+    .service-icon {
+        color: var(--color-ink);
+    }
+
+    .service-icon .accent {
+        stroke: var(--color-gold);
+    }
     /* ============================================================
     REVEAL ANIMATION
     ============================================================ */
