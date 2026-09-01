@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<!-- ============ HERO  ============ -->
     <section class="section lg:grid lg:grid-cols-12">
         <div class="ms-6 px-8 me-1 lg:col-start-2 lg:col-end-8 space-y-3 reveal">
             <p class="eyebrow reveal">Services</p>
@@ -10,64 +10,155 @@
         </div>
     </section>
 
+    <!-- ============ SERVICES  ============ -->
     <section class="section">
-        <div class="bg-paper pb-24 sm:pb-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                
-                <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-                    <div class="flex flex-col">
-                    <dt class="text-base/7 font-semibold text-gray-900">
-                        <div class="mb-6 flex size-10 items-center justify-center rounded-lg">
-                        <svg class="service-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="8.5" y="2.5" width="7" height="11" rx="3.5"/>
-                            <path class="accent" d="M10.5 6h3M10.5 8.5h3"/>
-                            <path d="M5.5 11a6.5 6.5 0 0 0 13 0"/>
-                            <path d="M12 17.5V21M8.5 21h7"/>
-                        </svg>
-                        </div>
-                        {{ _("Orchestral Recording") }}
-                    </dt>
-                    <dd class="mt-1 flex flex-auto flex-col text-base/7">
-                        <p class="flex-auto lede">{{ _("Bring your music to life with real musicians and authentic orchestral sound. We coordinate sessions with outstanding players and capture performances with the clarity, warmth, and detail that only live recording delivers. From a solo string quartet to a full symphonic ensemble, every take is recorded to the highest standard—ready to elevate your project.") }}</p>
-                        <p class="text-sm/6 mt-6 font-semibold">Useful for: Film & TV scores · Video game soundtracks · Album productions · Advertising & trailers</p>
-                    </dd>
-                    </div>
-                    <div class="flex flex-col">
-                    <dt class="text-base/7 font-semibold text-gray-900">
-                        <div class="mb-6 flex size-10 items-center justify-center rounded-lg">
-                        <svg class="service-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M16 4.5v10.2"/>
-                            <circle class="accent" cx="13.2" cy="15.2" r="2.8"/>
-                            <path d="M16 4.5c1.6 0.6 3.4 1.1 3.4 3.1 0 1.4-1.4 2-3.4 2.4"/>
-                            <path d="M4.5 8.5h5M4.5 12h6M4.5 15.5h4"/>
-                        </svg>
-                        </div>
-                        {{ _("Composition") }}
-                    </dt>
-                    <dd class="mt-1 flex flex-auto flex-col text-base/7">
-                        <p class="flex-auto lede">{{ _("Original music written specifically for your story, your world, and your audience. We craft themes and scores that capture emotion, reinforce narrative, and stay with the listener long after the scene ends. Every note is composed with your project's tone and intent in mind—never generic, always tailored.") }}</p>
-                        <p class="mt-6 text-sm/6 font-semibold">Useful for: Film & TV · Video games · Theatre & opera · Documentaries</p>
-                    </dd>
-                    </div>
-                    <div class="flex flex-col">
-                    <dt class="text-base/7 font-semibold text-gray-900">
-                        <div class="mb-6 flex size-10 items-center justify-center rounded-lg">
-                        <svg class="service-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path class="accent" d="M12.5 18c-1.4 0-2.4-1-2.4-2.3 0-1.4 1.1-2.4 2.5-2.4 1.6 0 2.7 1.3 2.7 3.1 0 3.3-2.8 5.4-5.6 6.1"/>
-                            <path class="accent" d="M12.6 13.3c-0.5-2-0.8-3.6-0.8-5.2 0-2.6 1-4.6 2.5-4.6 1.1 0 1.7 1 1.7 2.3 0 2.2-1.8 4-4 5.6"/>
-                            <path d="M4.5 9h4M4.5 12.5h4"/>
-                        </svg>
-                        </div>
-                        {{ _("Arrangement") }}
-                    </dt>
-                    <dd class="mt-1 flex flex-auto flex-col text-base/7">
-                        <p class="flex-auto lede">{{ _("Reshape existing music into something fresh, fitting, and fully realized. Whether adapting a song for orchestra, reworking a theme for a new context, or expanding a simple melody into a rich soundscape, we shape the material to serve your vision while honoring its original spirit.") }}</p>
-                        <p class="text-sm/6 mt-6 font-semibold">{{ _("Useful for: Cover versions & adaptations · Live performances · Album productions · Advertising") }}</p>
-                    </dd>
-                    </div>
-                </dl>
+        <div class="mx-1 px-2 md:mx-6 md:px-8 space-y-4">
+            <!--Orchestral Recording-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="8.5" y="2.5" width="7" height="11" rx="3.5"/>
+                        <path class="accent" d="M10.5 6h3M10.5 8.5h3"/>
+                        <path d="M5.5 11a6.5 6.5 0 0 0 13 0"/>
+                        <path d="M12 17.5V21M8.5 21h7"/>
+                    </svg>
                 </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Orchestral Recording") }}</h2>
+                    <p class="lede">{{ _("Bring your music to life with real musicians and authentic orchestral sound. We coordinate sessions with outstanding players and capture performances with the clarity, warmth, and detail that only live recording delivers. From a solo string quartet to a full symphonic ensemble, every take is recorded to the highest standard—ready to elevate your project.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--Composition-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M16 4.5v10.2"/>
+                        <circle class="accent" cx="13.2" cy="15.2" r="2.8"/>
+                        <path d="M16 4.5c1.6 0.6 3.4 1.1 3.4 3.1 0 1.4-1.4 2-3.4 2.4"/>
+                        <path d="M4.5 8.5h5M4.5 12h6M4.5 15.5h4"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Composition") }}</h2>
+                    <p class="lede">{{ _("Original music written specifically for your story, your world, and your audience. We craft themes and scores that capture emotion, reinforce narrative, and stay with the listener long after the scene ends. Every note is composed with your project's tone and intent in mind—never generic, always tailored.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--Arrangement-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path class="accent" d="M12.5 18c-1.4 0-2.4-1-2.4-2.3 0-1.4 1.1-2.4 2.5-2.4 1.6 0 2.7 1.3 2.7 3.1 0 3.3-2.8 5.4-5.6 6.1"/>
+                        <path class="accent" d="M12.6 13.3c-0.5-2-0.8-3.6-0.8-5.2 0-2.6 1-4.6 2.5-4.6 1.1 0 1.7 1 1.7 2.3 0 2.2-1.8 4-4 5.6"/>
+                        <path d="M4.5 9h4M4.5 12.5h4"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Arrangement") }}</h2>
+                    <p class="lede">{{ _("Reshape existing music into something fresh, fitting, and fully realized. Whether adapting a song for orchestra, reworking a theme for a new context, or expanding a simple melody into a rich soundscape, we shape the material to serve your vision while honoring its original spirit.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--Orchestration-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3v11.5"/>
+                        <circle class="accent" cx="9.2" cy="15" r="2.8"/>
+                        <path d="M12 3l5 2v3l-5-2"/>
+                        <path class="accent" d="M12 8l5 2v3l-5-2"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Orchestration") }}</h2>
+                    <p class="lede">{{ _("Turn a composition into a living, breathing ensemble. We assign each line to the right instruments, balance colors and textures, and make sure every part sounds idiomatic and expressive. The result is a score that plays beautifully and takes full advantage of the orchestra's range.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--Music Direction-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path class="accent" d="M12 3v7"/>
+                        <path d="M12 10c-3.5 1-6 4.5-6 8M12 10c3.5 1 6 4.5 6 8"/>
+                        <circle class="accent" cx="12" cy="3" r="1.4" fill="var(--color-gold)" stroke="none"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Music Direction") }}</h2>
+                    <p class="lede">{{ _("Expert leadership from the podium and beyond. We guide musicians through the score, shape interpretation, and ensure every session runs smoothly and every performance serves the music. With a clear artistic vision and hands-on direction, we bring cohesion and confidence to the recording process.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--MIDI Mockups-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3.5" y="7" width="17" height="10" rx="1.5"/>
+                        <path class="accent" d="M7 10v4M10 10v4M13.5 10v4M17 10v4"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("MIDI Mockups") }}</h2>
+                    <p class="lede">{{ _("Hear your music before a single musician plays a note. We produce realistic, detailed virtual renderings of your score, giving you and your team an accurate preview for approvals, timing, and creative decisions. It's the clearest way to align everyone before moving to live recording.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--Score Preparation-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="5" y="3" width="14" height="18" rx="1.5"/>
+                        <path class="accent" d="M8 8h8M8 11h8M8 14h5"/>
+                        <path d="M8 17h3"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Score Preparation") }}</h2>
+                    <p class="lede">{{ _("Clean, clear, professional sheet music that musicians can read at a glance. We prepare full scores and individual parts formatted to industry standards, so recording sessions run efficiently and nothing gets lost in translation. Well-prepared materials save time, money, and frustration in the studio.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--Music Production-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 16V8M8 18V6M20 16V8"/>
+                        <path class="accent" d="M12 15V9M16 19V5"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Music Production") }}</h2>
+                    <p class="lede">{{ _("The full creative and technical process, guided from concept to finished track. We oversee every stage—arranging, recording, editing, and shaping the sound—to deliver polished music that meets your goals. A single point of expertise ensuring your project sounds exactly as it should.") }}</p>
+                </div>
+            </div>
+            <!--Divider--><div class="border-t border-ink-soft"></div><!--Divider-->
+            <!--Mixing and Mastering-->
+            <div class="lg:grid lg:grid-cols-12 lg:gap-4 md:flex md:flex-row reveal">
+                <div class="px-4 py-5 sm:px-6 lg:col-start-2 lg:col-end-4">
+                    <svg class="service-icon" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 4v16M12 4v16M18 4v16"/>
+                        <circle class="accent" cx="6" cy="9" r="1.8" fill="var(--color-paper)"/>
+                        <circle class="accent" cx="12" cy="14" r="1.8" fill="var(--color-paper)"/>
+                        <circle class="accent" cx="18" cy="8" r="1.8" fill="var(--color-paper)"/>
+                    </svg>
+                </div>
+                <div class="px-4 py-5 sm:p-6 space-y-6 lg:col-start-4 lg:col-end-11">
+                    <h2 class="h-card font-semibold">{{ _("Mixing &amp; Mastering") }}</h2>
+                    <p class="lede">{{ _("The finishing touch that makes everything shine. We balance, blend, and polish every element into a cohesive, powerful mix, then deliver your music in the exact formats and specifications your project requires. What you receive is ready to use—broadcast-ready, screen-ready, release-ready.") }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTAs  ============ -->
+    <section class="section bg-paper-warm">
+        <div class="space-y-12 text-center">
+            <p class="eyebrow reveal">{{ _('Start a project') }}</p>
+            <div>
+                <a class="group btn hover:bg-paper hover:text-ink hover:-translate-y-1 transition-colors reveal" href="{{ url_for('contact_us') }}" data-delay='3'>{{ _('Request a quote') }} <span class="btn__beam group-hover:w-8"></span></a>
+                <a class="btn bg-paper text-ink hover:bg-ink hover:text-paper transition-colors hover:-translate-y-1 reveal" href="{{ url_for('work') }}" data-delay='3'>{{ _('Listen our work') }}</a>
             </div>
         </div>
     </section>
