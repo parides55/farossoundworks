@@ -799,9 +799,6 @@
   .text-paper {
     color: var(--color-paper);
   }
-  .text-slate-deep {
-    color: var(--color-slate-deep);
-  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -1060,6 +1057,9 @@
     }
     .lg\:col-end-7 {
       grid-column-end: 7;
+    }
+    .lg\:col-end-8 {
+      grid-column-end: 8;
     }
     .lg\:mx-0 {
       margin-inline: 0px;
