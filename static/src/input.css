@@ -42,7 +42,6 @@
             padding-block: clamp(2.25rem, 5vw, 4.5rem);
     }
     .section-head {
-        max-width: 60rem;
         margin-bottom: clamp(2.5rem, 5vw, 4rem);
     }
     .h-display {
@@ -169,6 +168,17 @@
 
     .service-icon .accent {
         stroke: var(--color-gold);
+    }
+    .work-card__kind {
+        font-family: var(--font-label);
+        font-size: 0.66rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--color-slate);
+    }
+    .work-card h3 {
+        font-size: 1.5rem;
+        line-height: 1.1;
     }
     /* ============================================================
     REVEAL ANIMATION
