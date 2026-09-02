@@ -20,33 +20,17 @@
         </div>
         <!--Media items-->
         <div class="mt-15 mx-6 lg:ms-20 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {% for item in recordings %}
             <div class="card my-5 reveal bg-paper-warm rounded-lg">
                 <div class="">
-                    <iframe class="w-full rounded-lg" height="352" src="https://www.youtube.com/embed/O-Mxk358osk?si=cdC68dCl-YTu4eLC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="w-full rounded-lg" height="352" src="{{ item.src }}" title="{{ item.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="px-4 py-4 sm:px-6">
-                    <span class="work-card__kind">Video</span>
-                    <h3 class="font-display">Historia ente Líneas</h3>
+                    <span class="work-card__kind">{{ item.kind }}</span>
+                    <h3 class="font-display">{{ item.title }}</h3>
                 </div>
             </div>
-            <div class="card my-5 reveal bg-paper-warm rounded-lg">
-                <div class="">
-                    <iframe class="w-full rounded-lg" height="352" src="https://www.youtube.com/embed/y36rfmsloNM?si=g68fCAWoGPcOEU_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="px-4 py-4 sm:px-6">
-                    <span class="work-card__kind">Video</span>
-                    <h3 class="font-display">Plantasia</h3>
-                </div>
-            </div>
-            <div class="card my-5 reveal bg-paper-warm rounded-lg">
-                <div class="">
-                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/00VHYxvnz7DQoO2K2ShD27?utm_source=generator&si=494eb348ae794492" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div class="px-4 py-4 sm:px-6">
-                    <span class="work-card__kind">Audio</span>
-                    <h3 class="font-display">More than the Sum of its Parts</h3>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
 

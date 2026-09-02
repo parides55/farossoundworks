@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_babel import Babel, _
 from flask_mail import Mail, Message
+import json
 import os
 if os.path.exists('env.py'):
     import env
@@ -53,7 +54,10 @@ def index():
 
 @app.route('/work')
 def work():
-    return render_template('work.html')
+    with open('data/recordings.json') as f:
+        recordings = json.load(f)
+
+    return render_template('work.html', recordings=recordings)
 
 
 @app.route('/facilities')
