@@ -89,6 +89,9 @@
         color: var(--color-paper);
         border-color: var(--color-ink);
     }
+    .card.hide {
+        display: none;
+    }
     .service__mark {
         font-family: var(--font-label);
         font-size: 0.7rem;

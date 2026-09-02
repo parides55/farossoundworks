@@ -29,46 +29,59 @@
 
     const input = document.getElementById("file-upload");
     const list = document.getElementById("file-list");
-    let store = new DataTransfer();
 
-    input.addEventListener("change", () => {
-        for (const file of input.files) {
-            const exists = Array.from(store.files).some(
-                f => f.name === file.name && f.size === file.size
-            );
-            if (!exists) store.items.add(file);
+    if (input && list) {
+        let store = new DataTransfer();
+
+        input.addEventListener("change", () => {
+            for (const file of input.files) {
+                const exists = Array.from(store.files).some(
+                    f => f.name === file.name && f.size === file.size
+                );
+                if (!exists) store.items.add(file);
+            }
+            input.files = store.files;
+            render();
+        });
+
+        function render() {
+            list.innerHTML = "";
+            Array.from(store.files).forEach((f, index) => {
+                const li = document.createElement("li");
+                li.textContent = f.name + " ";
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.textContent = "✕";
+                btn.addEventListener("click", () => removeFile(index));
+                li.appendChild(btn);
+                list.appendChild(li);
+            });
         }
-        input.files = store.files;
-        render();
-    });
 
-    function render() {
-        list.innerHTML = "";
-        Array.from(store.files).forEach((f, index) => {
-            const li = document.createElement("li");
-            li.textContent = f.name + " ";
-
-            const btn = document.createElement("button");
-            btn.type = "button";        // prevent form submit
-            btn.textContent = "✕";
-            btn.addEventListener("click", () => removeFile(index));
-
-            li.appendChild(btn);
-            list.appendChild(li);
-        });
+        function removeFile(index) {
+            const next = new DataTransfer();
+            Array.from(store.files).forEach((f, i) => {
+                if (i !== index) next.items.add(f);
+            });
+            store = next;
+            input.files = store.files;
+            render();
+        }
     }
 
-    function removeFile(index) {
-        // Rebuild the store without the removed file
-        const next = new DataTransfer();
-        Array.from(store.files).forEach((f, i) => {
-            if (i !== index) next.items.add(f);
+    /* ---------- work filtering ---------- */
+    const filters = document.querySelectorAll('.filter');
+    const cards = document.querySelectorAll('.card');
+    filters.forEach(btn => btn.addEventListener('click', () => {
+        console.log('filter clicked');
+        console.log(filters, cards);
+        filters.forEach(f => f.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        cards.forEach(card => {
+            const match = cat === 'all' || card.dataset.cat === cat;
+            card.classList.toggle('hide', !match);
         });
-        store = next;
-        input.files = store.files;
-        render();
-    }
-    
+    }));
+
 })();
-
-
