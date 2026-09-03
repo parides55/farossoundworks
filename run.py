@@ -107,7 +107,7 @@ def form_submit():
     is_quote = inquiry_type == "Quote request" or bool(project_types)
 
     try:
-        # --- Email to you (admin) ---
+        # --- Email to admin ---
         admin_html = f"""\
         <h2>{inquiry_type}</h2>
         <p><strong>Name:</strong> {name}</p>
@@ -133,22 +133,14 @@ def form_submit():
             reply_to=email,
         )
 
-        # Attach uploaded files
-        for f in uploaded_files:
-            if f and f.filename:
-                file_data = f.read()
-                if file_data:  # skip empty
-                    msg.attach(
-                        filename=f.filename,
-                        content_type=f.content_type or "application/octet-stream",
-                        data=file_data,
-                    )
-
         # --- Confirmation email to user ---
         user_html = f"""\
         <p>Hi {name},</p>
+        \n\n
         <p>We have received your message and will respond shortly.</p>
+        \n
         <p>Here is what you wrote to us:</p>
+        \n
         <blockquote style="border-left:3px solid #ccc; padding-left:1em; color:#555;">
             {message}
         </blockquote>
@@ -160,6 +152,22 @@ def form_submit():
             recipients=[email],
             html=user_html,
         )
+
+        # Attach uploaded files
+        for f in uploaded_files:
+            if f and f.filename:
+                file_data = f.read()
+                if file_data:  # skip empty
+                    msg.attach(
+                        filename=f.filename,
+                        content_type=f.content_type or "application/octet-stream",
+                        data=file_data,
+                    )
+                    response_msg.attach(
+                        filename=f.filename,
+                        content_type=f.content_type or "application/octet-stream",
+                        data=file_data,
+                    )
 
         mail.send(msg)
         mail.send(response_msg)
