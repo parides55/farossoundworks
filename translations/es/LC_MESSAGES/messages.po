@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-03 04:38+0300\n"
+"POT-Creation-Date: 2026-09-03 17:13+0300\n"
 "PO-Revision-Date: 2026-09-03 07:13+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -69,17 +69,17 @@ msgstr ""
 "tecnología y una forma de trabajar cercana y profesional. "
 
 #: templates/about-us.html:53 templates/facilities.html:65
-#: templates/index.html:136 templates/services.html:158 templates/work.html:40
+#: templates/index.html:155 templates/services.html:158 templates/work.html:40
 msgid "Start a project"
 msgstr "Iniciar un proyecto"
 
 #: templates/about-us.html:55 templates/facilities.html:67
-#: templates/index.html:18 templates/index.html:139 templates/services.html:160
+#: templates/index.html:18 templates/index.html:158 templates/services.html:160
 #: templates/work.html:42
 msgid "Request a quote"
 msgstr "Solicitar un presupuesto"
 
-#: templates/about-us.html:56 templates/index.html:113
+#: templates/about-us.html:56 templates/index.html:132
 #: templates/services.html:161
 msgid "Listen our work"
 msgstr "Escucha nuestro trabajo"
@@ -157,17 +157,17 @@ msgstr "Nombre"
 msgid "Select type of project"
 msgstr "Selecciona el tipo de proyecto"
 
-#: templates/contact-us.html:58 templates/index.html:80
+#: templates/contact-us.html:58 templates/index.html:87
 #: templates/services.html:27
 msgid "Orchestral Recording"
 msgstr "Grabación orquestal"
 
-#: templates/contact-us.html:62 templates/index.html:89
+#: templates/contact-us.html:62 templates/index.html:102
 #: templates/services.html:43
 msgid "Composition"
 msgstr "Composición"
 
-#: templates/contact-us.html:66 templates/index.html:98
+#: templates/contact-us.html:66 templates/index.html:117
 #: templates/services.html:58
 msgid "Arrangement"
 msgstr "Arreglo"
@@ -221,7 +221,7 @@ msgstr "Escribe lo que nos ayude a imaginarla."
 msgid "Send"
 msgstr "Enviar"
 
-#: templates/facilities.html:68 templates/index.html:104 templates/work.html:43
+#: templates/facilities.html:68 templates/index.html:123 templates/work.html:43
 msgid "All our services"
 msgstr "Todos nuestros servicios"
 
@@ -261,11 +261,15 @@ msgstr ""
 "abarca proyectos con la Ópera y Ballet Nacional de los Países Bajos, el "
 "IFFR y Prime Video."
 
-#: templates/index.html:72
+#: templates/index.html:33
+msgid "The Mission"
+msgstr "La misión"
+
+#: templates/index.html:72 templates/services.html:8
 msgid "What we do"
 msgstr "Qué hacemos"
 
-#: templates/index.html:73
+#: templates/index.html:73 templates/services.html:7
 msgid "Services"
 msgstr "Servicios"
 
@@ -277,7 +281,7 @@ msgstr ""
 "Desde el apoyo en la composición hasta el máster final, cubrimos todo el "
 "proceso de una grabación."
 
-#: templates/index.html:81
+#: templates/index.html:88
 msgid ""
 "Professional recording sessions that capture the full depth and dynamic "
 "range of live orchestral performances."
@@ -285,7 +289,7 @@ msgstr ""
 "Sesiones de grabación profesionales que capturan toda la profundidad y el"
 " rango dinámico de las interpretaciones orquestales en vivo."
 
-#: templates/index.html:90
+#: templates/index.html:103
 msgid ""
 "Original music written from the ground up to fit your vision, medium, and"
 " emotional intent."
@@ -293,7 +297,7 @@ msgstr ""
 "Música original escrita desde cero para adaptarse a tu visión, medio e "
 "intención emocional."
 
-#: templates/index.html:99
+#: templates/index.html:118
 msgid ""
 "Transforming your melody or existing piece into a fully realized "
 "arrangement across any ensemble or style."
@@ -301,11 +305,11 @@ msgstr ""
 "Transformamos tu melodía o pieza existente en un arreglo plenamente "
 "desarrollado para cualquier conjunto o estilo."
 
-#: templates/index.html:112
+#: templates/index.html:131
 msgid "Selected work"
 msgstr "Trabajos seleccionados"
 
-#: templates/index.html:114
+#: templates/index.html:133
 msgid ""
 "A short selection — the full library of recordings, videos and music "
 "examples lives on the work page."
@@ -313,13 +317,27 @@ msgstr ""
 "Una breve selección; la biblioteca completa de grabaciones, vídeos y "
 "ejemplos musicales se encuentra en la página de trabajo."
 
-#: templates/index.html:137
+#: templates/index.html:147
+msgid "Explore all work"
+msgstr "Explorar todo el trabajo"
+
+#: templates/index.html:156
 msgid "Tell us what you're making. We'll light the way."
 msgstr "Cuéntanos qué estás creando. Nosotros iluminaremos el camino."
 
-#: templates/index.html:140
+#: templates/index.html:159
 msgid "Tour our studios"
 msgstr "Conoce nuestros estudios"
+
+#: templates/services.html:9
+msgid ""
+"Everything needed to take orchestral music from the page to a finished "
+"master — under one roof, with one engineering philosophy: capture it "
+"honestly, then shape it with care."
+msgstr ""
+"Todo lo necesario para llevar la música orquestal de la partitura a un "
+"máster terminado, bajo un mismo techo y con una sola filosofía de "
+"ingeniería: capturarla con honestidad y luego darle forma con cuidado."
 
 #: templates/services.html:28
 msgid ""
