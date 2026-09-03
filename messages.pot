@@ -3,39 +3,110 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-24 11:29+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2026-09-03 04:38+0300\n"
+"PO-Revision-Date: 2026-09-03 04:38+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Spanish <LL@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: templates/base.html:40 templates/base.html:71 templates/base.html:100
+#: templates/about-us.html:11
+msgid "Welcome to Faros Soundworks"
+msgstr "Bienvenido a Faros Soundworks"
+
+#: templates/about-us.html:13
+msgid ""
+"Faros Soundworks was founded and is led by Rafaelos Christofi, a "
+"composer, music producer, and sound designer for audiovisual media, with "
+"credits across film, opera, theatre, and other audiovisual and performing"
+" arts productions."
+msgstr ""
+"Faros Soundworks fue fundado y está dirigido por Rafaelos Christofi, "
+"compositor para medios audiovisuales, productor musical y diseñador de sonido, "
+"con una trayectoria desarrollada en proyectos de cine, ópera, teatro y otras producciones, "
+"audiovisuales y escénicas."
+
+#: templates/about-us.html:14
+msgid ""
+"Throughout his career, he has collaborated with composers, musicians, and"
+" creative teams on projects tied to leading institutions and "
+"organizations, including the Dutch National Opera & Ballet, the "
+"International Film Festival Rotterdam (IFFR), EUROMUSE, the Oviedo "
+"Philharmonic Foundation, and Prime Video."
+msgstr ""
+"A lo largo de su carrera, ha colaborado con compositores, músicos y "
+"equipos creativos en proyectos vinculados a instituciones y "
+"organizaciones como la Dutch National Opera & Ballet, "
+"el International Film Festival Rotterdam (IFFR), "
+"EUROMUSE, la Fundación Filarmónica de Oviedo y Prime Video."
+
+#: templates/about-us.html:27
+msgid ""
+"Faros Soundworks is a project dedicated to music composition, production,"
+" and recording for film, video games, television, and other audiovisual "
+"media."
+msgstr ""
+"Faros Soundworks es un proyecto dedicado a la creación musical, producción y "
+"grabación de música para cine, videojuegos, televisión y otros medios "
+"audiovisuales."
+
+#: templates/about-us.html:28
+msgid ""
+"Our mission is to bring together outstanding musicians and deliver "
+"orchestral recordings of the highest quality—combining artistic "
+"excellence, cutting-edge technology, and a personal, professional "
+"approach to every project."
+msgstr ""
+"Nuestra misión es reunir a grandes músicos y ofrecer grabaciones "
+"orquestales de la máxima calidad, combinando excelencia artística, "
+"tecnología y una forma de trabajar cercana y profesional. "
+
+#: templates/about-us.html:53 templates/facilities.html:65
+#: templates/index.html:136 templates/services.html:158 templates/work.html:40
+msgid "Start a project"
+msgstr "Iniciar un proyecto"
+
+#: templates/about-us.html:55 templates/facilities.html:67
+#: templates/index.html:18 templates/index.html:139 templates/services.html:160
+#: templates/work.html:42
+msgid "Request a quote"
+msgstr "Solicitar un presupuesto"
+
+#: templates/about-us.html:56 templates/index.html:113
+#: templates/services.html:161
+msgid "Listen our work"
+msgstr "Escucha nuestro trabajo"
+
+#: templates/base.html:47 templates/base.html:79 templates/base.html:109
 msgid "Home"
 msgstr "Inicio"
 
-#: templates/base.html:41 templates/base.html:72 templates/base.html:101
+#: templates/base.html:48 templates/base.html:80 templates/base.html:110
 msgid "Our Work"
-msgstr "Nuestro Trabajo"
+msgstr "Nuestro trabajo"
 
-#: templates/base.html:42 templates/base.html:73 templates/base.html:102
+#: templates/base.html:49 templates/base.html:81 templates/base.html:111
 msgid "Our Services"
-msgstr "Nuestros Servicios"
+msgstr "Nuestros servicios"
 
-#: templates/base.html:43 templates/base.html:74 templates/base.html:103
+#: templates/base.html:50 templates/base.html:82 templates/base.html:112
+msgid "Our Mission"
+msgstr "Nuestra misión"
+
+#: templates/base.html:51 templates/base.html:83 templates/base.html:113
 msgid "Facilities"
 msgstr "Instalaciones"
 
-#: templates/base.html:44 templates/base.html:77 templates/base.html:104
+#: templates/base.html:52 templates/base.html:86 templates/base.html:114
 msgid "Get in touch"
-msgstr "Ponerse en contacto"
+msgstr "Ponte en contacto"
 
 #: templates/contact-us.html:7
 msgid "contact"
@@ -50,8 +121,9 @@ msgid ""
 "Request a quote for a session, or just send a quick message. We usually "
 "reply within two working days."
 msgstr ""
-"Solicita un presupuesto para una sesión, o simplemente envíanos un mensaje "
-"rápido. Normalmente respondemos en un plazo de dos días laborables."
+"Solicita un presupuesto para una sesión, o simplemente envíanos un "
+"mensaje breve. Normalmente respondemos en un plazo de dos días "
+"laborables."
 
 #: templates/contact-us.html:18
 msgid "Direct"
@@ -61,7 +133,7 @@ msgstr "Directo"
 msgid "Prefer to reach us straight away?"
 msgstr "¿Prefieres contactarnos directamente?"
 
-#: templates/contact-us.html:22 templates/contact-us.html:56
+#: templates/contact-us.html:22 templates/contact-us.html:48
 msgid "Email"
 msgstr "Correo electrónico"
 
@@ -69,143 +141,143 @@ msgstr "Correo electrónico"
 msgid "Phone"
 msgstr "Teléfono"
 
-#: templates/contact-us.html:30
-msgid "Address"
-msgstr "Dirección"
-
-#: templates/contact-us.html:34
-msgid "Office Hours"
-msgstr "Horario de oficina"
-
-#: templates/contact-us.html:35
-msgid "Monday - Friday"
-msgstr "Lunes - Viernes"
-
-#: templates/contact-us.html:44
+#: templates/contact-us.html:36
 msgid "QUICK MESSAGE"
 msgstr "MENSAJE RÁPIDO"
 
-#: templates/contact-us.html:45
+#: templates/contact-us.html:37
 msgid "REQUEST A QUOTE"
-msgstr "SOLICITAR PRESUPUESTO"
+msgstr "SOLICITAR UN PRESUPUESTO"
 
-#: templates/contact-us.html:52
+#: templates/contact-us.html:44
 msgid "Name"
 msgstr "Nombre"
 
-#: templates/contact-us.html:62
+#: templates/contact-us.html:54
 msgid "Select type of project"
 msgstr "Selecciona el tipo de proyecto"
 
-#: templates/contact-us.html:66 templates/index.html:77
+#: templates/contact-us.html:58 templates/index.html:80
+#: templates/services.html:27
 msgid "Orchestral Recording"
 msgstr "Grabación orquestal"
 
-#: templates/contact-us.html:70 templates/index.html:86
+#: templates/contact-us.html:62 templates/index.html:89
+#: templates/services.html:43
 msgid "Composition"
 msgstr "Composición"
 
-#: templates/contact-us.html:74 templates/index.html:95
+#: templates/contact-us.html:66 templates/index.html:98
+#: templates/services.html:58
 msgid "Arrangement"
 msgstr "Arreglo"
 
-#: templates/contact-us.html:78
+#: templates/contact-us.html:70 templates/services.html:74
 msgid "Orchestration"
 msgstr "Orquestación"
 
-#: templates/contact-us.html:82
+#: templates/contact-us.html:74 templates/services.html:89
 msgid "Music Direction"
 msgstr "Dirección musical"
 
-#: templates/contact-us.html:88
+#: templates/contact-us.html:80 templates/services.html:103
 msgid "MIDI Mockups"
 msgstr "Maquetas MIDI"
 
-#: templates/contact-us.html:92
+#: templates/contact-us.html:84 templates/services.html:118
 msgid "Score Preparation"
 msgstr "Preparación de partituras"
 
-#: templates/contact-us.html:96 templates/index.html:11
+#: templates/contact-us.html:88 templates/index.html:14
+#: templates/services.html:132
 msgid "Music Production"
 msgstr "Producción musical"
 
-#: templates/contact-us.html:100
+#: templates/contact-us.html:92
 msgid "Mixing and Final Delivery"
 msgstr "Mezcla y entrega final"
 
-#: templates/contact-us.html:109
+#: templates/contact-us.html:101
 msgid "Approximate number of players"
 msgstr "Número aproximado de músicos"
 
-#: templates/contact-us.html:113
+#: templates/contact-us.html:105
 msgid "Preferred date"
 msgstr "Fecha preferida"
 
-#: templates/contact-us.html:118
+#: templates/contact-us.html:110
 msgid "Upload any relevant files"
 msgstr "Sube cualquier archivo relevante"
 
-#: templates/contact-us.html:122
+#: templates/contact-us.html:115
 msgid "Tell us about the music"
 msgstr "Cuéntanos sobre la música"
 
-#: templates/contact-us.html:123
+#: templates/contact-us.html:116
 msgid "Write whatever helps us picture it."
-msgstr "Escribe todo lo que nos ayude a hacernos una idea."
+msgstr "Escribe lo que nos ayude a imaginarla."
 
-#: templates/contact-us.html:125
+#: templates/contact-us.html:118
 msgid "Send"
 msgstr "Enviar"
 
-#: templates/index.html:11
+#: templates/facilities.html:68 templates/index.html:104 templates/work.html:43
+msgid "All our services"
+msgstr "Todos nuestros servicios"
+
+#: templates/index.html:9
+msgid "Your browser does not support the video tag."
+msgstr "Tu navegador no admite la etiqueta de vídeo."
+
+#: templates/index.html:14
 msgid "Orchestral Recording · Spain"
 msgstr "Grabación orquestal · España"
 
-#: templates/index.html:14
+#: templates/index.html:17
 msgid "Hear our work"
 msgstr "Escucha nuestro trabajo"
 
-#: templates/index.html:15 templates/index.html:136
-msgid "Request a quote"
-msgstr "Solicitar presupuesto"
-
-#: templates/index.html:27
+#: templates/index.html:30
 msgid "Who we are"
 msgstr "Quiénes somos"
 
-#: templates/index.html:28
-msgid "The name means lighthouse — and that is the idea."
-msgstr "El nombre significa faro — y esa es la idea."
+#: templates/index.html:31
+msgid "The name means lighthouse. And that's the idea."
+msgstr "El nombre significa faro. Y esa es la idea."
 
-#: templates/index.html:29
+#: templates/index.html:32
 msgid ""
-"Founded on Spain's coast, Faros Soundworks brings composers, ensembles "
-"and studios a clear, guiding hand through the recording process. Every "
-"session is engineered to sound honest first and polished second, so the "
-"music arrives exactly as it was written to be heard."
+"Faros Soundworks composes, produces, and records music for film, video "
+"games, television, and audiovisual media—bringing together outstanding "
+"musicians to deliver orchestral recordings of the highest quality. "
+"Founded and led by composer and producer Rafaelos Christofi, whose work "
+"spans projects with the Dutch National Opera & Ballet, IFFR, and Prime "
+"Video."
 msgstr ""
-"Fundado en la costa de España, Faros Soundworks ofrece a compositores, "
-"agrupaciones y estudios una guía clara y orientadora a lo largo del proceso "
-"de grabación. Cada sesión está diseñada para sonar honesta antes que pulida, "
-"para que la música llegue exactamente como fue escrita para ser escuchada."
+"Faros Soundworks compone, produce y graba música para cine, videojuegos, "
+"televisión y medios audiovisuales, reuniendo a músicos excepcionales para "
+"ofrecer grabaciones orquestales de la más alta calidad. Fundada y "
+"dirigida por el compositor y productor Rafaelos Christofi, cuyo trabajo "
+"abarca proyectos con la Ópera y Ballet Nacional de los Países Bajos, el "
+"IFFR y Prime Video."
 
-#: templates/index.html:68
+#: templates/index.html:72
 msgid "What we do"
 msgstr "Qué hacemos"
 
-#: templates/index.html:69
+#: templates/index.html:73
 msgid "Services"
 msgstr "Servicios"
 
-#: templates/index.html:70
+#: templates/index.html:74
 msgid ""
 "From composition support to the final master, we cover the full arc of a "
 "recording."
 msgstr ""
-"Desde el apoyo en la composición hasta la masterización final, cubrimos todo "
-"el arco de una grabación."
+"Desde el apoyo en la composición hasta el máster final, cubrimos todo el "
+"proceso de una grabación."
 
-#: templates/index.html:78
+#: templates/index.html:81
 msgid ""
 "Professional recording sessions that capture the full depth and dynamic "
 "range of live orchestral performances."
@@ -213,50 +285,197 @@ msgstr ""
 "Sesiones de grabación profesionales que capturan toda la profundidad y el "
 "rango dinámico de las interpretaciones orquestales en vivo."
 
-#: templates/index.html:87
+#: templates/index.html:90
 msgid ""
 "Original music written from the ground up to fit your vision, medium, and"
 " emotional intent."
 msgstr ""
-"Música original escrita desde cero para ajustarse a tu visión, medio e "
+"Música original escrita desde cero para adaptarse a tu visión, medio e "
 "intención emocional."
 
-#: templates/index.html:96
+#: templates/index.html:99
 msgid ""
 "Transforming your melody or existing piece into a fully realized "
 "arrangement across any ensemble or style."
 msgstr ""
-"Transformar tu melodía o pieza existente en un arreglo completamente "
-"realizado para cualquier conjunto o estilo."
+"Transformamos tu melodía o pieza existente en un arreglo plenamente "
+"desarrollado para cualquier conjunto o estilo."
 
-#: templates/index.html:101
-msgid "All our services"
-msgstr "Todos nuestros servicios"
-
-#: templates/index.html:109
+#: templates/index.html:112
 msgid "Selected work"
 msgstr "Trabajos seleccionados"
 
-#: templates/index.html:110
-msgid "Listen our work"
-msgstr "Escucha nuestro trabajo"
-
-#: templates/index.html:111
+#: templates/index.html:114
 msgid ""
 "A short selection — the full library of recordings, videos and music "
 "examples lives on the work page."
 msgstr ""
-"Una breve selección — la biblioteca completa de grabaciones, vídeos y "
+"Una breve selección; la biblioteca completa de grabaciones, vídeos y "
 "ejemplos musicales se encuentra en la página de trabajo."
 
-#: templates/index.html:133
-msgid "Start a project"
-msgstr "Iniciar un proyecto"
-
-#: templates/index.html:134
+#: templates/index.html:137
 msgid "Tell us what you're making. We'll light the way."
 msgstr "Cuéntanos qué estás creando. Nosotros iluminaremos el camino."
 
-#: templates/index.html:137
+#: templates/index.html:140
 msgid "Tour our studios"
-msgstr "Visita nuestros estudios"
+msgstr "Conoce nuestros estudios"
+
+#: templates/services.html:28
+msgid ""
+"Bring your music to life with real musicians and authentic orchestral "
+"sound. We coordinate sessions with outstanding players and capture "
+"performances with the clarity, warmth, and detail that only live "
+"recording delivers. From a solo string quartet to a full symphonic "
+"ensemble, every take is recorded to the highest standard—ready to elevate"
+" your project."
+msgstr ""
+"Da vida a tu música con músicos reales y un sonido orquestal auténtico. "
+"Coordinamos sesiones con intérpretes excepcionales y capturamos las "
+"interpretaciones con la claridad, la calidez y el detalle que solo la "
+"grabación en vivo ofrece. Desde un cuarteto de cuerda hasta un conjunto "
+"sinfónico completo, cada toma se graba con los más altos estándares, "
+"lista para elevar tu proyecto."
+
+#: templates/services.html:44
+msgid ""
+"Original music written specifically for your story, your world, and your "
+"audience. We craft themes and scores that capture emotion, reinforce "
+"narrative, and stay with the listener long after the scene ends. Every "
+"note is composed with your project's tone and intent in mind—never "
+"generic, always tailored."
+msgstr ""
+"Música original escrita específicamente para tu historia, tu mundo y tu "
+"público. Creamos temas y partituras que capturan la emoción, refuerzan la "
+"narrativa y permanecen con el oyente mucho después de que termina la "
+"escena. Cada nota se compone teniendo en cuenta el tono y la intención de "
+"tu proyecto: nunca genérica, siempre a medida."
+
+#: templates/services.html:59
+msgid ""
+"Reshape existing music into something fresh, fitting, and fully realized."
+" Whether adapting a song for orchestra, reworking a theme for a new "
+"context, or expanding a simple melody into a rich soundscape, we shape "
+"the material to serve your vision while honoring its original spirit."
+msgstr ""
+"Transformamos música existente en algo fresco, adecuado y plenamente "
+"desarrollado. Ya sea adaptando una canción para orquesta, reelaborando un "
+"tema para un nuevo contexto o expandiendo una melodía sencilla en un rico "
+"paisaje sonoro, moldeamos el material para servir a tu visión respetando "
+"su espíritu original."
+
+#: templates/services.html:75
+msgid ""
+"Turn a composition into a living, breathing ensemble. We assign each line"
+" to the right instruments, balance colors and textures, and make sure "
+"every part sounds idiomatic and expressive. The result is a score that "
+"plays beautifully and takes full advantage of the orchestra's range."
+msgstr ""
+"Convierte una composición en un conjunto vivo y palpitante. Asignamos "
+"cada línea a los instrumentos adecuados, equilibramos colores y texturas "
+"y nos aseguramos de que cada parte suene idiomática y expresiva. El "
+"resultado es una partitura que suena de maravilla y aprovecha al máximo "
+"el rango de la orquesta."
+
+#: templates/services.html:90
+msgid ""
+"Expert leadership from the podium and beyond. We guide musicians through "
+"the score, shape interpretation, and ensure every session runs smoothly "
+"and every performance serves the music. With a clear artistic vision and "
+"hands-on direction, we bring cohesion and confidence to the recording "
+"process."
+msgstr ""
+"Liderazgo experto desde el podio y más allá. Guiamos a los músicos a "
+"través de la partitura, damos forma a la interpretación y garantizamos "
+"que cada sesión transcurra sin problemas y que cada interpretación sirva "
+"a la música. Con una visión artística clara y una dirección práctica, "
+"aportamos cohesión y confianza al proceso de grabación."
+
+#: templates/services.html:104
+msgid ""
+"Hear your music before a single musician plays a note. We produce "
+"realistic, detailed virtual renderings of your score, giving you and your"
+" team an accurate preview for approvals, timing, and creative decisions. "
+"It's the clearest way to align everyone before moving to live recording."
+msgstr ""
+"Escucha tu música antes de que un solo músico toque una nota. Producimos "
+"representaciones virtuales realistas y detalladas de tu partitura, "
+"ofreciéndote a ti y a tu equipo una vista previa precisa para "
+"aprobaciones, sincronización y decisiones creativas. Es la forma más "
+"clara de alinear a todos antes de pasar a la grabación en vivo."
+
+#: templates/services.html:119
+msgid ""
+"Clean, clear, professional sheet music that musicians can read at a "
+"glance. We prepare full scores and individual parts formatted to industry"
+" standards, so recording sessions run efficiently and nothing gets lost "
+"in translation. Well-prepared materials save time, money, and frustration"
+" in the studio."
+msgstr ""
+"Partituras limpias, claras y profesionales que los músicos pueden leer de "
+"un vistazo. Preparamos partituras completas y partes individuales con el "
+"formato de los estándares de la industria, para que las sesiones de "
+"grabación transcurran con eficiencia y nada se pierda en el proceso. Los "
+"materiales bien preparados ahorran tiempo, dinero y frustraciones en el "
+"estudio."
+
+#: templates/services.html:133
+msgid ""
+"The full creative and technical process, guided from concept to finished "
+"track. We oversee every stage—arranging, recording, editing, and shaping "
+"the sound—to deliver polished music that meets your goals. A single point"
+" of expertise ensuring your project sounds exactly as it should."
+msgstr ""
+"Todo el proceso creativo y técnico, guiado desde el concepto hasta la "
+"pista terminada. Supervisamos cada etapa —arreglos, grabación, edición y "
+"conformación del sonido— para entregar música pulida que cumpla tus "
+"objetivos. Un único punto de experiencia que garantiza que tu proyecto "
+"suene exactamente como debe."
+
+#: templates/services.html:148
+msgid "Mixing &amp; Mastering"
+msgstr "Mezcla y masterización"
+
+#: templates/services.html:149
+msgid ""
+"The finishing touch that makes everything shine. We balance, blend, and "
+"polish every element into a cohesive, powerful mix, then deliver your "
+"music in the exact formats and specifications your project requires. What"
+" you receive is ready to use—broadcast-ready, screen-ready, release-"
+"ready."
+msgstr ""
+"El toque final que hace brillar todo. Equilibramos, fusionamos y pulimos "
+"cada elemento en una mezcla cohesionada y potente, y luego entregamos tu "
+"música en los formatos y especificaciones exactos que tu proyecto "
+"requiere. Lo que recibes está listo para usar: listo para emisión, listo "
+"para pantalla, listo para su lanzamiento."
+
+#: templates/work.html:8
+msgid "Our work"
+msgstr "Nuestro trabajo"
+
+#: templates/work.html:9
+msgid "Recordings &amp; Videos"
+msgstr "Grabaciones y vídeos"
+
+#: templates/work.html:10
+msgid ""
+"A library of recordings, live session videos and music examples. Videos "
+"and streaming embeds load only when you press play, so the page stays "
+"quick."
+msgstr ""
+"Una biblioteca de grabaciones, vídeos de sesiones en vivo y ejemplos "
+"musicales. Los vídeos y las inserciones de streaming se cargan solo "
+"cuando pulsas reproducir, para que la página siga siendo rápida."
+
+#: templates/work.html:17
+msgid "All"
+msgstr "Todos"
+
+#: templates/work.html:18
+msgid "Recordings"
+msgstr "Grabaciones"
+
+#: templates/work.html:19
+msgid "Videos"
+msgstr "Vídeos"
