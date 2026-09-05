@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-03 17:13+0300\n"
+"POT-Creation-Date: 2026-09-05 21:54+0300\n"
 "PO-Revision-Date: 2026-09-03 07:13+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -68,12 +68,12 @@ msgstr ""
 "orquestales de la máxima calidad, combinando excelencia artística, "
 "tecnología y una forma de trabajar cercana y profesional. "
 
-#: templates/about-us.html:53 templates/facilities.html:65
+#: templates/about-us.html:53 templates/facilities.html:63
 #: templates/index.html:155 templates/services.html:158 templates/work.html:40
 msgid "Start a project"
 msgstr "Iniciar un proyecto"
 
-#: templates/about-us.html:55 templates/facilities.html:67
+#: templates/about-us.html:55 templates/facilities.html:65
 #: templates/index.html:18 templates/index.html:158 templates/services.html:160
 #: templates/work.html:42
 msgid "Request a quote"
@@ -221,7 +221,46 @@ msgstr "Escribe lo que nos ayude a imaginarla."
 msgid "Send"
 msgstr "Enviar"
 
-#: templates/facilities.html:68 templates/index.html:123 templates/work.html:43
+#: templates/facilities.html:9
+msgid "Studio"
+msgstr "Estudio"
+
+#: templates/facilities.html:10
+msgid "ONVI Studio"
+msgstr "Estudio ONVI"
+
+#: templates/facilities.html:14
+msgid ""
+"OVNI Studio is a professional recording, mixing, production, and "
+"mastering studio. Located in Bonielles, a small village in Llanera, it's "
+"a former stone industrial building constructed in 1975. The studio is "
+"divided into two recording rooms of different sizes: a smaller one with a"
+" drier sound and a larger one of almost 200 square meters, constructed of"
+" wood and stone, which gives recordings a spectacular natural reverb."
+msgstr ""
+"OVNI Estudio es un estudio profesional de grabación, mezcla, producción y "
+"masterización. Ubicado en Bonielles, un pequeño pueblo de Llanera, es un "
+"antiguo edificio industrial de piedra construido en 1975. El estudio está "
+"dividido en dos salas de grabación de diferentes tamaños: una más pequeña "
+"con un sonido más seco y otra más grande de casi 200 metros cuadrados, "
+"construida de madera y piedra, lo que proporciona a las grabaciones una "
+"espectacular reverberación natural."
+
+#: templates/facilities.html:15
+msgid ""
+"The main room is ideal for recording drums and percussion, as well as for"
+" recording bands of any musical style and live symphony orchestras, "
+"thanks to its acoustics, spaciousness, and comfort."
+msgstr ""
+"La sala principal es ideal para grabar baterías y percusión, así como "
+"para grabar bandas de cualquier estilo musical y orquestas sinfónicas "
+"en directo, gracias a su calidad acústica, amplitud y comodidad."
+
+#: templates/facilities.html:34
+msgid "The Equipment"
+msgstr "El equipo"
+
+#: templates/facilities.html:66 templates/index.html:123 templates/work.html:43
 msgid "All our services"
 msgstr "Todos nuestros servicios"
 

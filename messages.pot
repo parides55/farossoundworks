@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-03 17:13+0300\n"
+"POT-Creation-Date: 2026-09-05 21:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,12 +53,12 @@ msgid ""
 "approach to every project."
 msgstr ""
 
-#: templates/about-us.html:53 templates/facilities.html:65
+#: templates/about-us.html:53 templates/facilities.html:63
 #: templates/index.html:155 templates/services.html:158 templates/work.html:40
 msgid "Start a project"
 msgstr ""
 
-#: templates/about-us.html:55 templates/facilities.html:67
+#: templates/about-us.html:55 templates/facilities.html:65
 #: templates/index.html:18 templates/index.html:158 templates/services.html:160
 #: templates/work.html:42
 msgid "Request a quote"
@@ -203,7 +203,36 @@ msgstr ""
 msgid "Send"
 msgstr ""
 
-#: templates/facilities.html:68 templates/index.html:123 templates/work.html:43
+#: templates/facilities.html:9
+msgid "Studio"
+msgstr ""
+
+#: templates/facilities.html:10
+msgid "ONVI Studio"
+msgstr ""
+
+#: templates/facilities.html:14
+msgid ""
+"OVNI Studio is a professional recording, mixing, production, and "
+"mastering studio. Located in Bonielles, a small village in Llanera, it's "
+"a former stone industrial building constructed in 1975. The studio is "
+"divided into two recording rooms of different sizes: a smaller one with a"
+" drier sound and a larger one of almost 200 square meters, constructed of"
+" wood and stone, which gives recordings a spectacular natural reverb."
+msgstr ""
+
+#: templates/facilities.html:15
+msgid ""
+"The main room is ideal for recording drums and percussion, as well as for"
+" recording bands of any musical style and live symphony orchestras, "
+"thanks to its acoustics, spaciousness, and comfort."
+msgstr ""
+
+#: templates/facilities.html:34
+msgid "The Equipment"
+msgstr ""
+
+#: templates/facilities.html:66 templates/index.html:123 templates/work.html:43
 msgid "All our services"
 msgstr ""
 
