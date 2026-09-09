@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-05 21:54+0300\n"
+"POT-Creation-Date: 2026-09-09 11:02+0300\n"
 "PO-Revision-Date: 2026-09-03 07:13+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -68,12 +68,12 @@ msgstr ""
 "orquestales de la máxima calidad, combinando excelencia artística, "
 "tecnología y una forma de trabajar cercana y profesional. "
 
-#: templates/about-us.html:53 templates/facilities.html:63
+#: templates/about-us.html:53 templates/facilities.html:146
 #: templates/index.html:155 templates/services.html:158 templates/work.html:40
 msgid "Start a project"
 msgstr "Iniciar un proyecto"
 
-#: templates/about-us.html:55 templates/facilities.html:65
+#: templates/about-us.html:55 templates/facilities.html:148
 #: templates/index.html:18 templates/index.html:158 templates/services.html:160
 #: templates/work.html:42
 msgid "Request a quote"
@@ -238,13 +238,13 @@ msgid ""
 " drier sound and a larger one of almost 200 square meters, constructed of"
 " wood and stone, which gives recordings a spectacular natural reverb."
 msgstr ""
-"OVNI Estudio es un estudio profesional de grabación, mezcla, producción y "
-"masterización. Ubicado en Bonielles, un pequeño pueblo de Llanera, es un "
-"antiguo edificio industrial de piedra construido en 1975. El estudio está "
-"dividido en dos salas de grabación de diferentes tamaños: una más pequeña "
-"con un sonido más seco y otra más grande de casi 200 metros cuadrados, "
-"construida de madera y piedra, lo que proporciona a las grabaciones una "
-"espectacular reverberación natural."
+"OVNI Estudio es un estudio profesional de grabación, mezcla, producción y"
+" masterización. Ubicado en Bonielles, un pequeño pueblo de Llanera, es un"
+" antiguo edificio industrial de piedra construido en 1975. El estudio "
+"está dividido en dos salas de grabación de diferentes tamaños: una más "
+"pequeña con un sonido más seco y otra más grande de casi 200 metros "
+"cuadrados, construida de madera y piedra, lo que proporciona a las "
+"grabaciones una espectacular reverberación natural."
 
 #: templates/facilities.html:15
 msgid ""
@@ -253,14 +253,71 @@ msgid ""
 "thanks to its acoustics, spaciousness, and comfort."
 msgstr ""
 "La sala principal es ideal para grabar baterías y percusión, así como "
-"para grabar bandas de cualquier estilo musical y orquestas sinfónicas "
-"en directo, gracias a su calidad acústica, amplitud y comodidad."
+"para grabar bandas de cualquier estilo musical y orquestas sinfónicas en "
+"directo, gracias a su calidad acústica, amplitud y comodidad."
 
 #: templates/facilities.html:34
 msgid "The Equipment"
 msgstr "El equipo"
 
-#: templates/facilities.html:66 templates/index.html:123 templates/work.html:43
+#: templates/facilities.html:37
+msgid "Recording system"
+msgstr "Sistema de grabación"
+
+#: templates/facilities.html:39
+msgid "Antelope Orion + 32 channel + Pro Tools latest version"
+msgstr "Antelope Orion + 32 channel + Pro Tools latest version"
+
+#: templates/facilities.html:41
+msgid "Previous"
+msgstr "Previos"
+
+#: templates/facilities.html:52
+msgid "Microphones"
+msgstr "Microfonía"
+
+#: templates/facilities.html:54
+msgid "Dynamic Microphones:"
+msgstr "Dinámicos:"
+
+#: templates/facilities.html:68
+msgid "Condenser Microphones:"
+msgstr "Condensador:"
+
+#: templates/facilities.html:77
+msgid "Ribbon Microphones:"
+msgstr "Cinta:"
+
+#: templates/facilities.html:83
+msgid "Backline"
+msgstr "Backline"
+
+#: templates/facilities.html:85
+msgid "Guitar Heads:"
+msgstr "Cabezal de guitarra:"
+
+#: templates/facilities.html:96
+msgid "Guitar Cabinets:"
+msgstr "Pantallas de guitarra:"
+
+#: templates/facilities.html:104
+msgid "Bass Head:"
+msgstr "Cabezal de Bajo:"
+
+#: templates/facilities.html:111
+msgid "Bass Cabinet:"
+msgstr "Pantalla de Bajo:"
+
+#: templates/facilities.html:116
+msgid "Drums:"
+msgstr "Batería:"
+
+#: templates/facilities.html:122
+msgid "Effects:"
+msgstr "Efectos:"
+
+#: templates/facilities.html:149 templates/index.html:123
+#: templates/work.html:43
 msgid "All our services"
 msgstr "Todos nuestros servicios"
 

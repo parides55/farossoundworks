@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-05 21:54+0300\n"
+"POT-Creation-Date: 2026-09-09 11:02+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,12 +53,12 @@ msgid ""
 "approach to every project."
 msgstr ""
 
-#: templates/about-us.html:53 templates/facilities.html:63
+#: templates/about-us.html:53 templates/facilities.html:146
 #: templates/index.html:155 templates/services.html:158 templates/work.html:40
 msgid "Start a project"
 msgstr ""
 
-#: templates/about-us.html:55 templates/facilities.html:65
+#: templates/about-us.html:55 templates/facilities.html:148
 #: templates/index.html:18 templates/index.html:158 templates/services.html:160
 #: templates/work.html:42
 msgid "Request a quote"
@@ -232,7 +232,64 @@ msgstr ""
 msgid "The Equipment"
 msgstr ""
 
-#: templates/facilities.html:66 templates/index.html:123 templates/work.html:43
+#: templates/facilities.html:37
+msgid "Recording system"
+msgstr ""
+
+#: templates/facilities.html:39
+msgid "Antelope Orion + 32 channel + Pro Tools latest version"
+msgstr ""
+
+#: templates/facilities.html:41
+msgid "Previous"
+msgstr ""
+
+#: templates/facilities.html:52
+msgid "Microphones"
+msgstr ""
+
+#: templates/facilities.html:54
+msgid "Dynamic Microphones:"
+msgstr ""
+
+#: templates/facilities.html:68
+msgid "Condenser Microphones:"
+msgstr ""
+
+#: templates/facilities.html:77
+msgid "Ribbon Microphones:"
+msgstr ""
+
+#: templates/facilities.html:83
+msgid "Backline"
+msgstr ""
+
+#: templates/facilities.html:85
+msgid "Guitar Heads:"
+msgstr ""
+
+#: templates/facilities.html:96
+msgid "Guitar Cabinets:"
+msgstr ""
+
+#: templates/facilities.html:104
+msgid "Bass Head:"
+msgstr ""
+
+#: templates/facilities.html:111
+msgid "Bass Cabinet:"
+msgstr ""
+
+#: templates/facilities.html:116
+msgid "Drums:"
+msgstr ""
+
+#: templates/facilities.html:122
+msgid "Effects:"
+msgstr ""
+
+#: templates/facilities.html:149 templates/index.html:123
+#: templates/work.html:43
 msgid "All our services"
 msgstr ""
 
