@@ -17,52 +17,121 @@
             <div class="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto reveal" data-delay="1">
                 <div class="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 xl:gap-8">
                 <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 dark:shadow-none">
-                    <img src="{{ url_for ('static', filename='images/studio-1.jpg' ) }}" alt="" class="block size-full object-cover" />
+                    <img src="{{ url_for ('static', filename='images/studio-1.jpg' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
                 </div>
                 <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                    <img src="{{ url_for ('static', filename='images/studio-2.jpg' ) }}" alt="" class="block size-full object-cover" />
+                    <img src="{{ url_for ('static', filename='images/studio-2.jpg' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
                 </div>
                 <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-                    <img src="{{ url_for ('static', filename='images/studio-3.jpg' ) }}" alt="" class="block size-full object-cover" />
+                    <img src="{{ url_for ('static', filename='images/studio-3.jpg' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
                 </div>
                 <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                    <img src="{{ url_for ('static', filename='images/studio-4.jpg' ) }}" alt="" class="block size-full object-cover" />
+                    <img src="{{ url_for ('static', filename='images/studio-4.jpg' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
                 </div>
                 </div>
             </div>
             <div class="max-lg:mt-16 lg:col-span-1 reveal" data-delay="2">
                 <p class="text-base/7 font-semibold text-gray-500">{{ _("The Equipment") }}</p>
-                <hr class="mt-6 border-t border-gray-200 dark:border-gray-700" />
-                <div>
-                    <button class="accordion border-2 border-ink-soft">{{ _("Recording system") }}</button>
-                    <div class="panel">
+                <hr class="mt-6 border-t border-gray-200" />
+                <div class="flex flex-col mt-6">
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">{{ _("Recording system") }}</button>
+                    <div class="panel px-8 my-8">
                         {{ _("Antelope Orion + 32 channel + Pro Tools latest version") }}
                     </div>
-                    <button class="accordion border-2 border-ink-soft">{{ _("Previous") }}</button>
-                    <div class="panel">
-                        <ul>
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">{{ _("Previous") }}</button>
+                    <div class="panel px-8 my-8">
+                        <ul class="list-disc">
                             <li>{{ _("2 x TLAudio 5051 Valve processor") }}</li>
                             <li>{{ _("DBX 576") }}</li>
                             <li>{{ _("AVALON 747sp") }}</li>
                             <li>{{ _("2x soundcraft B1 channel") }}</li>
                             <li>{{ _("2x Focusrite G5 green channel strip") }}</li>
                             <li>{{ _("24x Neve V3 console") }}</li>
+                        </ul class="px-8 my-8 list-disc">
+                    </div>
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">{{ _("Microphones") }}</button>
+                    <div class="panel px-8 my-8">
+                        <h3 class="font-semibold text-lg">{{ _("Dynamic Microphones:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("4x Shure SM 57") }}</li>
+                            <li>{{ _("4x Shure SM 58") }}</li>
+                            <li>{{ _("Sennheiser e 906") }}</li>
+                            <li>{{ _("Audix D 6") }}</li>
+                            <li>{{ _("3x Sennheiser 421") }}</li>
+                            <li>{{ _("Yamaha NS 10 Subkick hand-made") }}</li>
+                            <li>{{ _("2x AKG 112") }}</li>
+                            <li>{{ _("1x Shure Beta 52") }}</li>
+                            <li>{{ _("3x Audio-Technica ATM 230") }}</li>
+                            <li>{{ _("4x Beyerdynamic M88TG") }}</li>
+                            <li>{{ _("1x Shure SM81") }}</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">{{ _("Condenser Microphones:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("2x MXL V69") }}</li>
+                            <li>{{ _("Audio-Technica AT4040") }}</li>
+                            <li>{{ _("Neumann U 87") }}</li>
+                            <li>{{ _("2x Rode NT 1-A") }}</li>
+                            <li>{{ _("2x AKG 414 XLII") }}</li>
+                            <li>{{ _("2x Oktava MK 012") }}</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">{{ _("Ribbon Microphones:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("Coles 4038 Ribbon") }}</li>
+                            <li>{{ _("2x Royer R-122") }}</li>
                         </ul>
                     </div>
-                    <button class="accordion border-2 border-ink-soft">{{ _("Microphones") }}</button>
-                    <div class="panel">
-                        {{ _("Dynamic") }}
-                        {{ _("Condenser") }}
-                        {{ _("Tape") }}
-                    </div>
-                    <button class="accordion border-2 border-ink-soft">{{ _("Backline") }}</button>
-                    <div class="panel">
-                        {{ _("Guitar headstock") }}
-                        {{ _("Guitar screens") }}
-                        {{ _("Bass Head") }}
-                        {{ _("Low Screen") }}
-                        {{ _("Battery") }}
-                        {{ _("Effects") }}
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">{{ _("Backline") }}</button>
+                    <div class="panel px-8 my-8">
+                        <h3 class="font-semibold text-lg">{{ _("Guitar Heads:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("Orange Rockverb 100") }}</li>
+                            <li>{{ _("Brunetti 069") }}</li>
+                            <li>{{ _("ORANGE OR 15") }}</li>
+                            <li>{{ _("Soldano SLO 100 handmade copy") }}</li>
+                            <li>{{ _("Orange AD 30") }}</li>
+                            <li>{{ _("Laney GH100 L") }}</li>
+                            <li>{{ _("Synmarc Bassman") }}</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-lg">{{ _("Guitar Cabinets:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("2x Bogner 4x12 with Celestion Vintage 30 speakers") }}</li>
+                            <li>{{ _("Marshall 1960BHW with Celestion G12H-30s speakers") }}</li>
+                            <li>{{ _("Hiwatt Hi Gain with two Vintage 30 speakers and 2 Celestion Greenbacks") }}</li>
+                            <li>{{ _("Hiwatt Maxx Celestion with SP HG speakers") }}</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-lg">{{ _("Bass Head:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("Ampeg SVT Classic American Edition") }}</li>
+                            <li>{{ _("SWR X Series") }}</li>
+                            <li>{{ _("Ashdown MAG C-210T Evo III 307 Watt Bass Combo") }}</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-lg">{{ _("Bass Cabinet:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("Ampeg 4x10") }}</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-lg">{{ _("Drums:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("Gretsch Renown Maple 24″ 13″ 16″ 18″") }}</li>
+                            <li>{{ _("DW Collector’s Series") }}</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-lg">{{ _("Effects:") }}</h3>
+                        <ul class="list-disc">
+                            <li>{{ _("EHX Graphic Fuzz, Delay Memory Boy, Small Stone, Big Muff") }}</li>
+                            <li>{{ _("Analog Delay") }}</li>
+                            <li>{{ _("Overdrive Thundertomate Tubescreamer") }}</li>
+                            <li>{{ _("Boss Tremolo") }}</li>
+                            <li>{{ _("Fuzz Shark Attack") }}</li>
+                            <li>{{ _("Wah Dunlop Cry Baby") }}</li>
+                            <li>{{ _("SansAmp Bass Overdriver DI") }}</li>
+                            <li>{{ _("Xotic EP Booster") }}</li>
+                            <li>{{ _("Black Arts Toneworks Pharaoh") }}</li>
+                            <li>{{ _("Way Huge Swollen Pickle MkII S") }}</li>
+                        </ul>
                     </div>
                 </div>
             </div>

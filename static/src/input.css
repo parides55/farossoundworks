@@ -198,7 +198,8 @@
         display: none;
     }
     .active {
-        background: var(--color-paper-warm);
+        background: var(--color-paper);
+        opacity: 75%;
     }
     /* ============================================================
     REVEAL ANIMATION
