@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_babel import Babel, _
 from flask_mail import Mail, Message
+import requests
 import json
 import os
 if os.path.exists('env.py'):
@@ -33,6 +34,26 @@ def set_language(lang_code):
     if lang_code in app.config['BABEL_SUPPORTED_LOCALES']:
         session['lang'] = lang_code
     return redirect(request.referrer or url_for('index'))
+
+
+# reCAPTCHA configuration
+app.config['RECAPTCHA_SITE_KEY'] = os.environ.get('RECAPTCHA_SITE_KEY')
+app.config['RECAPTCHA_SECRET_KEY'] = os.environ.get('RECAPTCHA_SECRET_KEY')
+
+
+def verify_recaptcha(token):
+    response = requests.post(
+        "https://www.google.com/recaptcha/api/siteverify",
+        data={
+            "secret": app.config['RECAPTCHA_SECRET_KEY'],
+            "response": token,
+        },
+        timeout=10,
+    )
+
+    result = response.json()
+
+    return result.get("success", False)
 
 
 # Email setup settings
@@ -81,6 +102,14 @@ def contact_us():
 
 @app.route('/form_submit', methods=["POST"])
 def form_submit():
+
+    recaptcha_response = request.form.get('g-recaptcha-response')
+
+    if not recaptcha_response:
+        return "Please complete the reCAPTCHA.", 400
+
+    if not verify_recaptcha(recaptcha_response):
+        return "reCAPTCHA verification failed.", 400
 
     inquiry_type = request.form.get('inquiryType')
     name = request.form.get("name")
