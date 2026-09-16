@@ -4,8 +4,14 @@
 
 <!-- ============ HERO ============ -->
     <section class="h-screen w-screen mb-16">
-        <video class="w-full h-full object-cover opacity-60" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <!--Desktop View-->
+        <video class="hidden md:block w-full h-full object-cover opacity-60" autoplay muted loop playsinline preload="auto" aria-hidden="true">
             <source src="https://res.cloudinary.com/doy01c41z/video/upload/v1788186038/Video_Website_wk9wag.mp4" type="video/mp4">
+            {{ _("Your browser does not support the video tag.") }}
+        </video>
+        <!--Mobile View-->
+        <video class="block md:hidden w-full h-full object-cover opacity-60" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+            <source src="https://res.cloudinary.com/doy01c41z/video/upload/ar_9:16,c_fill,g_auto/Video_Website_wk9wag.mp4" type="video/mp4">
             {{ _("Your browser does not support the video tag.") }}
         </video>
         <div class="space-y-4 absolute inset-y-1/3 inset-x-1/8 reveal">
