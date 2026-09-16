@@ -22,6 +22,16 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWV660D5EP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RWV660D5EP');
+    </script>
+
 </head>
 <body class="bg-paper font-body text-ink text-base font-normal overflow-x-hidden leading-[1.65]">
     <button class="hover:-translate-y-1" onclick="topFunction()" id="myBtn" title="Go to top">
