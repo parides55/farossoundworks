@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-09 11:02+0300\n"
+"POT-Creation-Date: 2026-09-16 13:17+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,42 +54,42 @@ msgid ""
 msgstr ""
 
 #: templates/about-us.html:53 templates/facilities.html:146
-#: templates/index.html:155 templates/services.html:158 templates/work.html:40
+#: templates/index.html:161 templates/services.html:158 templates/work.html:40
 msgid "Start a project"
 msgstr ""
 
 #: templates/about-us.html:55 templates/facilities.html:148
-#: templates/index.html:18 templates/index.html:158 templates/services.html:160
+#: templates/index.html:24 templates/index.html:164 templates/services.html:160
 #: templates/work.html:42
 msgid "Request a quote"
 msgstr ""
 
-#: templates/about-us.html:56 templates/index.html:132
+#: templates/about-us.html:56 templates/index.html:138
 #: templates/services.html:161
 msgid "Listen our work"
 msgstr ""
 
-#: templates/base.html:47 templates/base.html:79 templates/base.html:109
+#: templates/base.html:49 templates/base.html:81 templates/base.html:111
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:48 templates/base.html:80 templates/base.html:110
+#: templates/base.html:50 templates/base.html:82 templates/base.html:112
 msgid "Our Work"
 msgstr ""
 
-#: templates/base.html:49 templates/base.html:81 templates/base.html:111
+#: templates/base.html:51 templates/base.html:83 templates/base.html:113
 msgid "Our Services"
 msgstr ""
 
-#: templates/base.html:50 templates/base.html:82 templates/base.html:112
+#: templates/base.html:52 templates/base.html:84 templates/base.html:114
 msgid "Our Mission"
 msgstr ""
 
-#: templates/base.html:51 templates/base.html:83 templates/base.html:113
+#: templates/base.html:53 templates/base.html:85 templates/base.html:115
 msgid "Facilities"
 msgstr ""
 
-#: templates/base.html:52 templates/base.html:86 templates/base.html:114
+#: templates/base.html:54 templates/base.html:88 templates/base.html:116
 msgid "Get in touch"
 msgstr ""
 
@@ -139,17 +139,17 @@ msgstr ""
 msgid "Select type of project"
 msgstr ""
 
-#: templates/contact-us.html:58 templates/index.html:87
+#: templates/contact-us.html:58 templates/index.html:93
 #: templates/services.html:27
 msgid "Orchestral Recording"
 msgstr ""
 
-#: templates/contact-us.html:62 templates/index.html:102
+#: templates/contact-us.html:62 templates/index.html:108
 #: templates/services.html:43
 msgid "Composition"
 msgstr ""
 
-#: templates/contact-us.html:66 templates/index.html:117
+#: templates/contact-us.html:66 templates/index.html:123
 #: templates/services.html:58
 msgid "Arrangement"
 msgstr ""
@@ -170,7 +170,7 @@ msgstr ""
 msgid "Score Preparation"
 msgstr ""
 
-#: templates/contact-us.html:88 templates/index.html:14
+#: templates/contact-us.html:88 templates/index.html:20
 #: templates/services.html:132
 msgid "Music Production"
 msgstr ""
@@ -188,7 +188,7 @@ msgid "Preferred date"
 msgstr ""
 
 #: templates/contact-us.html:110
-msgid "Upload any relevant files"
+msgid "Upload any relevant files (max size: 25MB)"
 msgstr ""
 
 #: templates/contact-us.html:115
@@ -288,32 +288,32 @@ msgstr ""
 msgid "Effects:"
 msgstr ""
 
-#: templates/facilities.html:149 templates/index.html:123
+#: templates/facilities.html:149 templates/index.html:129
 #: templates/work.html:43
 msgid "All our services"
 msgstr ""
 
-#: templates/index.html:9
+#: templates/index.html:10 templates/index.html:15
 msgid "Your browser does not support the video tag."
 msgstr ""
 
-#: templates/index.html:14
+#: templates/index.html:20
 msgid "Orchestral Recording · Spain"
 msgstr ""
 
-#: templates/index.html:17
+#: templates/index.html:23
 msgid "Hear our work"
 msgstr ""
 
-#: templates/index.html:30
+#: templates/index.html:36
 msgid "Who we are"
 msgstr ""
 
-#: templates/index.html:31
+#: templates/index.html:37
 msgid "The name means lighthouse. And that's the idea."
 msgstr ""
 
-#: templates/index.html:32
+#: templates/index.html:38
 msgid ""
 "Faros Soundworks composes, produces, and records music for film, video "
 "games, television, and audiovisual media—bringing together outstanding "
@@ -323,61 +323,61 @@ msgid ""
 "Video."
 msgstr ""
 
-#: templates/index.html:33
+#: templates/index.html:39
 msgid "The Mission"
 msgstr ""
 
-#: templates/index.html:72 templates/services.html:8
+#: templates/index.html:78 templates/services.html:8
 msgid "What we do"
 msgstr ""
 
-#: templates/index.html:73 templates/services.html:7
+#: templates/index.html:79 templates/services.html:7
 msgid "Services"
 msgstr ""
 
-#: templates/index.html:74
+#: templates/index.html:80
 msgid ""
 "From composition support to the final master, we cover the full arc of a "
 "recording."
 msgstr ""
 
-#: templates/index.html:88
+#: templates/index.html:94
 msgid ""
 "Professional recording sessions that capture the full depth and dynamic "
 "range of live orchestral performances."
 msgstr ""
 
-#: templates/index.html:103
+#: templates/index.html:109
 msgid ""
 "Original music written from the ground up to fit your vision, medium, and"
 " emotional intent."
 msgstr ""
 
-#: templates/index.html:118
+#: templates/index.html:124
 msgid ""
 "Transforming your melody or existing piece into a fully realized "
 "arrangement across any ensemble or style."
 msgstr ""
 
-#: templates/index.html:131
+#: templates/index.html:137
 msgid "Selected work"
 msgstr ""
 
-#: templates/index.html:133
+#: templates/index.html:139
 msgid ""
 "A short selection — the full library of recordings, videos and music "
 "examples lives on the work page."
 msgstr ""
 
-#: templates/index.html:147
+#: templates/index.html:153
 msgid "Explore all work"
 msgstr ""
 
-#: templates/index.html:156
+#: templates/index.html:162
 msgid "Tell us what you're making. We'll light the way."
 msgstr ""
 
-#: templates/index.html:159
+#: templates/index.html:165
 msgid "Tour our studios"
 msgstr ""
 
