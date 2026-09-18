@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-16 13:17+0300\n"
+"POT-Creation-Date: 2026-09-18 09:03+0300\n"
 "PO-Revision-Date: 2026-09-03 07:13+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -84,27 +84,27 @@ msgstr "Solicitar un presupuesto"
 msgid "Listen our work"
 msgstr "Escucha nuestro trabajo"
 
-#: templates/base.html:49 templates/base.html:81 templates/base.html:111
+#: templates/base.html:57 templates/base.html:89 templates/base.html:119
 msgid "Home"
 msgstr "Inicio"
 
-#: templates/base.html:50 templates/base.html:82 templates/base.html:112
+#: templates/base.html:58 templates/base.html:90 templates/base.html:120
 msgid "Our Work"
 msgstr "Nuestro trabajo"
 
-#: templates/base.html:51 templates/base.html:83 templates/base.html:113
+#: templates/base.html:59 templates/base.html:91 templates/base.html:121
 msgid "Our Services"
 msgstr "Nuestros servicios"
 
-#: templates/base.html:52 templates/base.html:84 templates/base.html:114
+#: templates/base.html:60 templates/base.html:92 templates/base.html:122
 msgid "Our Mission"
 msgstr "Nuestra misión"
 
-#: templates/base.html:53 templates/base.html:85 templates/base.html:115
+#: templates/base.html:61 templates/base.html:93 templates/base.html:123
 msgid "Facilities"
 msgstr "Instalaciones"
 
-#: templates/base.html:54 templates/base.html:88 templates/base.html:116
+#: templates/base.html:62 templates/base.html:96 templates/base.html:124
 msgid "Get in touch"
 msgstr "Ponte en contacto"
 
@@ -206,7 +206,6 @@ msgid "Preferred date"
 msgstr "Fecha preferida"
 
 #: templates/contact-us.html:110
-#, fuzzy
 msgid "Upload any relevant files (max size: 25MB)"
 msgstr "Sube cualquier archivo relevante (tamaño máximo: 25MB)"
 
@@ -218,7 +217,7 @@ msgstr "Cuéntanos sobre la música"
 msgid "Write whatever helps us picture it."
 msgstr "Escribe lo que nos ayude a imaginarla."
 
-#: templates/contact-us.html:118
+#: templates/contact-us.html:120
 msgid "Send"
 msgstr "Enviar"
 
@@ -270,7 +269,7 @@ msgid "Antelope Orion + 32 channel + Pro Tools latest version"
 msgstr "Antelope Orion + 32 channel + Pro Tools latest version"
 
 #: templates/facilities.html:41
-msgid "Previous"
+msgid "Preamps"
 msgstr "Previos"
 
 #: templates/facilities.html:52
@@ -594,4 +593,7 @@ msgstr "Grabaciones"
 #: templates/work.html:19
 msgid "Videos"
 msgstr "Vídeos"
+
+#~ msgid "Previous"
+#~ msgstr "Previos"
 
