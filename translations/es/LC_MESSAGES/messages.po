@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-18 09:03+0300\n"
+"POT-Creation-Date: 2026-09-18 10:37+0300\n"
 "PO-Revision-Date: 2026-09-03 07:13+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -68,12 +68,12 @@ msgstr ""
 "orquestales de la máxima calidad, combinando excelencia artística, "
 "tecnología y una forma de trabajar cercana y profesional. "
 
-#: templates/about-us.html:53 templates/facilities.html:146
+#: templates/about-us.html:53 templates/facilities.html:412
 #: templates/index.html:161 templates/services.html:158 templates/work.html:40
 msgid "Start a project"
 msgstr "Iniciar un proyecto"
 
-#: templates/about-us.html:55 templates/facilities.html:148
+#: templates/about-us.html:55 templates/facilities.html:414
 #: templates/index.html:24 templates/index.html:164 templates/services.html:160
 #: templates/work.html:42
 msgid "Request a quote"
@@ -221,7 +221,7 @@ msgstr "Escribe lo que nos ayude a imaginarla."
 msgid "Send"
 msgstr "Enviar"
 
-#: templates/facilities.html:9
+#: templates/facilities.html:9 templates/facilities.html:147
 msgid "Studio"
 msgstr "Estudio"
 
@@ -256,7 +256,7 @@ msgstr ""
 "para grabar bandas de cualquier estilo musical y orquestas sinfónicas en "
 "directo, gracias a su calidad acústica, amplitud y comodidad."
 
-#: templates/facilities.html:34
+#: templates/facilities.html:34 templates/facilities.html:172
 msgid "The Equipment"
 msgstr "El equipo"
 
@@ -272,31 +272,31 @@ msgstr "Antelope Orion + 32 channel + Pro Tools latest version"
 msgid "Preamps"
 msgstr "Previos"
 
-#: templates/facilities.html:52
+#: templates/facilities.html:52 templates/facilities.html:244
 msgid "Microphones"
 msgstr "Microfonía"
 
-#: templates/facilities.html:54
+#: templates/facilities.html:54 templates/facilities.html:276
 msgid "Dynamic Microphones:"
 msgstr "Dinámicos:"
 
-#: templates/facilities.html:68
+#: templates/facilities.html:68 templates/facilities.html:258
 msgid "Condenser Microphones:"
 msgstr "Condensador:"
 
-#: templates/facilities.html:77
+#: templates/facilities.html:77 templates/facilities.html:267
 msgid "Ribbon Microphones:"
 msgstr "Cinta:"
 
-#: templates/facilities.html:83
+#: templates/facilities.html:83 templates/facilities.html:341
 msgid "Backline"
 msgstr "Backline"
 
-#: templates/facilities.html:85
+#: templates/facilities.html:85 templates/facilities.html:345
 msgid "Guitar Heads:"
 msgstr "Cabezal de guitarra:"
 
-#: templates/facilities.html:96
+#: templates/facilities.html:96 templates/facilities.html:357
 msgid "Guitar Cabinets:"
 msgstr "Pantallas de guitarra:"
 
@@ -308,7 +308,7 @@ msgstr "Cabezal de Bajo:"
 msgid "Bass Cabinet:"
 msgstr "Pantalla de Bajo:"
 
-#: templates/facilities.html:116
+#: templates/facilities.html:116 templates/facilities.html:382
 msgid "Drums:"
 msgstr "Batería:"
 
@@ -316,7 +316,95 @@ msgstr "Batería:"
 msgid "Effects:"
 msgstr "Efectos:"
 
-#: templates/facilities.html:149 templates/index.html:129
+#: templates/facilities.html:148
+msgid "DYNAMITA Studio"
+msgstr "Estudio DYNAMITA"
+
+#: templates/facilities.html:152
+msgid ""
+"Dynamita Studio is a professional recording environment designed to "
+"provide artists, bands, orchestras, and producers with the space and "
+"flexibility needed to create at their best. At the heart of the studio is"
+" an impressive 85 m² control room with carefully controlled acoustics, "
+"offering an accurate and natural monitoring environment while providing "
+"enough space for full-band sessions. The 110 m² Rock Room is a versatile "
+"recording space designed for everything from acoustic instruments and "
+"live bands to orchestras and choirs. Its combination of live and "
+"controlled acoustics, movable acoustic traps, and beautiful natural "
+"reverberation allows the room to be adapted to suit a wide range of "
+"recording projects."
+msgstr ""
+"Dynamita Studio es un entorno profesional de grabación diseñado para "
+"ofrecer a artistas, bandas, orquestas y productores el espacio y la "
+"flexibilidad necesarios para dar lo mejor de sí mismos. En el corazón del "
+"estudio se encuentra una impresionante sala de control de 85 m², con una "
+"acústica cuidadosamente controlada que proporciona una escucha precisa y "
+"natural, además de suficiente espacio para trabajar con una banda completa. "
+"La Rock Room, de 110 m², es un espacio de grabación versátil pensado para "
+"todo tipo de proyectos, desde instrumentos acústicos y bandas en directo "
+"hasta orquestas y coros. Su combinación de acústica viva y controlada, "
+"junto con trampas acústicas móviles y una fabulosa reverberación natural, "
+"permite adaptar la sala a las necesidades de una amplia variedad de "
+"proyectos de grabación."
+
+#: templates/facilities.html:153
+msgid ""
+"For more focused sessions, The Hall of Voices provides an intimate 2.40 ×"
+" 1.65 m space ideal for vocals, guitar and bass amplifiers, brass "
+"instruments, dubbing, and other close-miked sources. Beyond the recording"
+" spaces, Dynamita Studio also offers an 80 m² relaxation room where "
+"artists and musicians can take a break, clear their minds, and recharge "
+"between sessions. Equipped with a TV, Blu-ray player, PlayStation, "
+"microwave, refrigerator, and other amenities, the space is designed to "
+"make longer recording sessions as comfortable and enjoyable as possible."
+msgstr ""
+"Para sesiones más específicas, The Hall of Voices ofrece un espacio "
+"íntimo de 2,40 × 1,65 m, ideal para grabar voces, amplificadores de guitarra "
+"y bajo, instrumentos de metal, doblaje y otras fuentes que requieren una "
+"captación cercana. Además de sus espacios de grabación, Dynamita Studio "
+"cuenta con una amplia sala de descanso de 80 m², pensada para que artistas "
+"y músicos puedan desconectar, despejar la mente y recuperar energías entre "
+"sesiones. Equipada con TV, reproductor Blu-ray, PlayStation, microondas, "
+"frigorífico y otros servicios, esta zona está diseñada para que las "
+"sesiones de grabación más largas sean lo más cómodas y agradables posible."
+
+#: templates/facilities.html:177
+msgid "Platform"
+msgstr "Plataforma"
+
+#: templates/facilities.html:190
+msgid "Console"
+msgstr "Consola"
+
+#: templates/facilities.html:200
+msgid "Monitoring"
+msgstr "Monitoraje"
+
+#: templates/facilities.html:214
+msgid "Outboard & FX"
+msgstr "Outboard & FX"
+
+#: templates/facilities.html:248
+msgid "Large-Diaphragm & Tube Microphones:"
+msgstr "Micrófonos de gran diafragma y de válvulas:"
+
+#: templates/facilities.html:302
+msgid "Plugins"
+msgstr "Plugins"
+
+#: templates/facilities.html:367
+msgid "Bass Heads:"
+msgstr "Cabezal de Bajo:"
+
+#: templates/facilities.html:375
+msgid "Bass Cabinets:"
+msgstr "Pantalla de Bajo:"
+
+#: templates/facilities.html:396
+msgid "Electronic Drums:"
+msgstr "Baterías electrónicas:"
+
+#: templates/facilities.html:415 templates/index.html:129
 #: templates/work.html:43
 msgid "All our services"
 msgstr "Todos nuestros servicios"
