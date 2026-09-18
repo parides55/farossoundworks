@@ -140,6 +140,272 @@
     </div>
 </section>
 
+<section class="section-head">
+    <div class="overflow-hidden bg-paper pb-24 sm:pb-32">
+        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+            <div class="max-w-4xl reveal">
+                <p class="eyebrow">{{ _("Studio") }}</p>
+                <h1 class="mt-2 h-display font-semibold">{{ _("DYNAMITA Studio") }}</h1>
+            </div>
+            <section class="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+            <div class="lg:pr-8 reveal">
+                <p class="mt-6 lede">{{ _("Dynamita Studio is a professional recording environment designed to provide artists, bands, orchestras, and producers with the space and flexibility needed to create at their best. At the heart of the studio is an impressive 85 m² control room with carefully controlled acoustics, offering an accurate and natural monitoring environment while providing enough space for full-band sessions. The 110 m² Rock Room is a versatile recording space designed for everything from acoustic instruments and live bands to orchestras and choirs. Its combination of live and controlled acoustics, movable acoustic traps, and beautiful natural reverberation allows the room to be adapted to suit a wide range of recording projects.") }}</p>
+                <p class="mt-8 lede">{{ _("For more focused sessions, The Hall of Voices provides an intimate 2.40 × 1.65 m space ideal for vocals, guitar and bass amplifiers, brass instruments, dubbing, and other close-miked sources. Beyond the recording spaces, Dynamita Studio also offers an 80 m² relaxation room where artists and musicians can take a break, clear their minds, and recharge between sessions. Equipped with a TV, Blu-ray player, PlayStation, microwave, refrigerator, and other amenities, the space is designed to make longer recording sessions as comfortable and enjoyable as possible.") }}</p>
+            </div>
+            <div class="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto reveal" data-delay="1">
+                <div class="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 xl:gap-8">
+                <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 dark:shadow-none">
+                    <img src="{{ url_for ('static', filename='images/studioB_1.webp' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
+                </div>
+                <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+                    <img src="{{ url_for ('static', filename='images/studioB_2.webp' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+                    <img src="{{ url_for ('static', filename='images/studioB_3.webp' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
+                </div>
+                <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+                    <img src="{{ url_for ('static', filename='images/studioB_4.webp' ) }}" alt="" class="block size-ful class="px-8 my-8 list-disc"l object-cover" />
+                </div>
+                </div>
+            </div>
+            <div class="max-lg:mt-16 lg:col-span-1 reveal" data-delay="2">
+                <p class="text-base/7 font-semibold text-gray-500">{{ _("The Equipment") }}</p>
+                <hr class="mt-6 border-t border-gray-200" />
+                <div class="flex flex-col mt-6">
+                    <!-- PLATFORM -->
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">
+                        {{ _("Platform") }}
+                    </button>
+                    <div class="panel px-8 my-8">
+                        <ul class="list-disc">
+                            <li>Mac Pro 7.1 3.5GHz 8Core 48GB</li>
+                            <li>Mac Pro 3.46GHz 6Core 48GB</li>
+                            <li>Lynx Aurora16 x2 (32 i/o)</li>
+                            <li>Lynx AES16eSRC (x2)</li>
+                            <li>Steinberg Cubase 10.5</li>
+                        </ul>
+                    </div>
+                    <!-- CONSOLE -->
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">
+                        {{ _("Console") }}
+                    </button>
+                    <div class="panel px-8 my-8">
+                        <ul class="list-disc">
+                            <li>Tascam M700</li>
+                            <li>40 Channels (up to 80 channels in mix)</li>
+                        </ul>
+                    </div>
+                    <!-- MONITORING -->
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">
+                        {{ _("Monitoring") }}
+                    </button>
+                    <div class="panel px-8 my-8">
+                        <ul class="list-disc">
+                            <li>JBL 4412</li>
+                            <li>Genelec 1031a</li>
+                            <li>Yamaha NS10</li>
+                            <li>Genelec 1029a</li>
+                            <li>Powerplay Digital P16</li>
+                            <li>Truth 2031a</li>
+                        </ul>
+                    </div>
+                    <!-- OUTBOARD & FX -->
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">
+                        {{ _("Outboard & FX") }}
+                    </button>
+                    <div class="panel space-y-4 px-8 my-8">
+                        <ul class="list-disc">
+                            <li>Avalon VT-737 SP</li>
+                            <li>TLAudio VP1</li>
+                            <li>2x TLAudio 5001 Ivory</li>
+                            <li>API 512c</li>
+                            <li>TLAudio C1</li>
+                            <li>Heritage Audio JR73</li>
+                            <li>2x Neve 8816</li>
+                            <li>2x Vanad500</li>
+                            <li>2x Alter500</li>
+                            <li>Fairman TSC</li>
+                            <li>SPL Dynamaxx</li>
+                            <li>SPL Loudness Maximizer</li>
+                            <li>IGS LA500</li>
+                            <li>SSL G Bus Compressor</li>
+                            <li>SPL Transient Designer (4ch)</li>
+                            <li>2x BSS DPR402</li>
+                            <li>TC Electronics M3000</li>
+                            <li>Lexicon PCM91</li>
+                            <li>Yamaha SPX 2000</li>
+                            <li>Line 6 PODxt Pro</li>
+                            <li>Universal Audio UAD2 Nevana 128</li>
+                            <li>THD Hot Plate</li>
+                        </ul>
+                    </div>
+                    <!-- MICROPHONES -->
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">
+                        {{ _("Microphones") }}
+                    </button>
+                    <div class="panel space-y-4 px-8 my-8">
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Large-Diaphragm & Tube Microphones:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Flea 47 Vintage</li>
+                            <li>Neumann U87 P48 (Vintage)</li>
+                            <li>SE Electronics Gemini II</li>
+                            <li>AKG 414 XLII</li>
+                            <li>Oktava MK319 (3)</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Condenser Microphones:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>2x Neumann KM184</li>
+                            <li>2x SE Electronics SE8</li>
+                            <li>2x Oktava MK012</li>
+                            <li>2x AKG C1000</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Ribbon Microphones:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Coles 4038</li>
+                            <li>2x SE Electronics VR1</li>
+                            <li>Alctron RM5S</li>
+                            <li>RM700 Ribbon Mic</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Dynamic Microphones:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Sennheiser MD441</li>
+                            <li>Shure SM7B</li>
+                            <li>3x Sennheiser MD421</li>
+                            <li>Audix D6</li>
+                            <li>2x Audix D2</li>
+                            <li>2x Audix D4</li>
+                            <li>2x Audix Micro-D</li>
+                            <li>Dynamite Subkick</li>
+                            <li>6x Sennheiser e604</li>
+                            <li>8x Shure SM57</li>
+                            <li>Shure Beta57</li>
+                            <li>Shure Beta56</li>
+                            <li>Audix i-5</li>
+                            <li>5x Shure SM58</li>
+                            <li>Audix D6</li>
+                            <li>3x AKG D112</li>
+                            <li>Shure Beta52A</li>
+                            <li>2x Shure Beta91</li>
+                            <li>2x Shure Beta91A</li>
+                        </ul>
+                    </div>
+                    <!-- PLUGINS -->
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">
+                        {{ _("Plugins") }}
+                    </button>
+                    <div class="panel px-8 my-8">
+                        <ul class="list-disc">
+                            <li>Waves Renaissance</li>
+                            <li>Brainworx SSL G/E/J</li>
+                            <li>Brainworx N Channel</li>
+                            <li>Brainworx Focusrite SC</li>
+                            <li>PA Amek EQ 200</li>
+                            <li>Brainworx Mäag Audio EQ2 & EQ4</li>
+                            <li>Brainworx Purple Audio MC77</li>
+                            <li>Waves PIE</li>
+                            <li>Waves C4</li>
+                            <li>Waves C1</li>
+                            <li>Waves Q Eq</li>
+                            <li>Waves Trueverb</li>
+                            <li>Waves Hybrid Line</li>
+                            <li>Lindell 50 Channel</li>
+                            <li>UAD Neve Bundle</li>
+                            <li>SPL Transient Designer</li>
+                            <li>Brainworx V3 Mastering Equalizer</li>
+                            <li>UAD SSL</li>
+                            <li>UAD Studer A800</li>
+                            <li>UAD Shadow Hills Mastering Compressor</li>
+                            <li>UAD Cambridge</li>
+                            <li>UAD Realverb</li>
+                            <li>UAD 4K Bundle (SSL)</li>
+                            <li>UAD Empirical Labs Fatso</li>
+                            <li>UAD Fairchild</li>
+                            <li>UAD LA-2A</li>
+                            <li>UAD 1176LN</li>
+                            <li>Drumagog 4 Platinum</li>
+                            <li>Slate Trigger</li>
+                            <li>Tracks 3 Deluxe</li>
+                            <li>Sonnox Oxford</li>
+                        </ul>
+                    </div>
+                    <!-- BACKLINE -->
+                    <button class="accordion font-semibold bg-paper-warm hover:cursor-pointer hover:opacity-75">
+                        {{ _("Backline") }}
+                    </button>
+                    <div class="panel space-y-4 px-8 my-8">
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Guitar Heads:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Mesa Boogie Road King</li>
+                            <li>Marshall JCM2000 Pedro Vecino Mod.</li>
+                            <li>Mesa Boogie Triple Rectifier (ex-Rammstein, modded)</li>
+                            <li>Marshall AFD100</li>
+                            <li>Peavey 6505</li>
+                            <li>Orange Tiny Terror</li>
+                            <li>Kemper Profiler</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Guitar Cabinets:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>ENGL 4x12</li>
+                            <li>Laney 4x12</li>
+                            <li>2x Marshall 1960A 4x12</li>
+                            <li>Marshall 1960VB</li>
+                            <li>4x Mesa Boogie 4x12</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Bass Heads:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Ampeg SVT5 Pro</li>
+                            <li>Ampeg SVT3 Pro</li>
+                            <li>Line 6 LowDown HD750</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Bass Cabinets:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Ampeg 8x10 Classic</li>
+                            <li>Warwick 4x10</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Drums:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Tama Starclassic Maple Custom Japan 22(2)/10/12/14/16</li>
+                            <li>Gretsch Catalina Maple 10/22/12/14/16</li>
+                            <li>PDP Custom Maple 8/22/10/12/14/16</li>
+                            <li>Tama Starclassic Bellbrass 14x6.5</li>
+                            <li>Ludwig Black Beauty 14x6.5 Handhammered</li>
+                            <li>Pearl Ian Paice 14x6.5</li>
+                            <li>Tama Metalworks 14x6.5</li>
+                            <li>PDP Maple 14x5.5</li>
+                            <li>Gretsch Maple 14x5.5</li>
+                        </ul>
+                        <h3 class="font-semibold text-lg">
+                            {{ _("Electronic Drums:") }}
+                        </h3>
+                        <ul class="list-disc">
+                            <li>Clavia Ddrum4</li>
+                            <li>Roland TD12 Module</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ============ CTAs  ============ -->
     <section class="section bg-paper-warm">
         <div class="space-y-12 text-center">
