@@ -148,16 +148,24 @@ def form_submit():
     email = request.form.get("email")
     message = request.form.get("message")
 
-    # Quote-only fields
-    project_types = request.form.getlist("orchestral") \
-        request.form.getlist("composition") \
-        request.form.getlist("arrangement") \
-        request.form.getlist("orchestration") \
-        request.form.getlist("music-direction") \
-        request.form.getlist("midi-mockups") \
-        request.form.getlist("score-preparation") \
-        request.form.getlist("music-production") \
-        request.form.getlist("mixing-final-delivery")
+    # --- Quote-only fields ---
+    project_fields = [
+        "orchestral",
+        "composition",
+        "arrangement",
+        "orchestration",
+        "music-direction",
+        "midi-mockups",
+        "score-preparation",
+        "music-production",
+        "mixing-final-delivery",
+    ]
+
+    project_types = [
+        value
+        for field in project_fields
+        for value in request.form.getlist(field)
+    ]
 
     number_of_players = request.form.get("number-of-players")
     preferred_date = request.form.get("preferred-date")
@@ -176,13 +184,13 @@ def form_submit():
         """
 
         if is_quote:
-            admin_html = f"""
+            admin_html += f"""
             <p><strong>Project type(s):</strong> {", ".join(project_types) or "—"}</p>
             <p><strong>Approx. number of players:</strong> {number_of_players or "—"}</p>
             <p><strong>Preferred date:</strong> {preferred_date or "—"}</p>
             """
 
-        admin_html = f"""
+        admin_html += f"""
         <p><strong>Message:</strong></p>
         <p>{message}</p>
         """
@@ -237,8 +245,6 @@ def form_submit():
         )
         return redirect('/')
 
-    except Exception as e:
-        print("EMAIL ERROR:", e)
     except Exception:
         app.logger.exception(
             "Failed to send contact form email (from=%s type=%s)",
