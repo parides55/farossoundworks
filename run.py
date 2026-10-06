@@ -4,8 +4,38 @@ from flask_mail import Mail, Message
 import requests
 import json
 import os
+import logging
+from logging.config import dictConfig
 if os.path.exists('env.py'):
     import env
+
+
+# --- Logging setup ---
+# Must run before Flask() so app.logger inherits this configuration.
+LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+os.makedirs(LOG_DIR, exist_ok=True)
+LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
+
+dictConfig({
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {"format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s"},
+        "simple": {"format": "[%(levelname)s] %(message)s"},
+    },
+    "handlers": {
+        "console": {"class": "logging.StreamHandler", "formatter": "simple"},
+        "file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(LOG_DIR, "farossoundworks.log"),
+            "maxBytes": 5 * 1024 * 1024,
+            "backupCount": 5,
+            "encoding": "utf-8",
+            "formatter": "verbose",
+        },
+    },
+    "root": {"handlers": ["console", "file"], "level": LOG_LEVEL},
+})
 
 
 app = Flask(__name__)
@@ -106,9 +136,11 @@ def form_submit():
     recaptcha_response = request.form.get('g-recaptcha-response')
 
     if not recaptcha_response:
+        app.logger.warning("Contact form submitted without a reCAPTCHA token")
         return "Please complete the reCAPTCHA.", 400
 
     if not verify_recaptcha(recaptcha_response):
+        app.logger.warning("reCAPTCHA verification failed for a contact form submission")
         return "reCAPTCHA verification failed.", 400
 
     inquiry_type = request.form.get('inquiryType')
@@ -118,14 +150,14 @@ def form_submit():
 
     # Quote-only fields
     project_types = request.form.getlist("orchestral") \
-        + request.form.getlist("composition") \
-        + request.form.getlist("arrangement") \
-        + request.form.getlist("orchestration") \
-        + request.form.getlist("music-direction") \
-        + request.form.getlist("midi-mockups") \
-        + request.form.getlist("score-preparation") \
-        + request.form.getlist("music-production") \
-        + request.form.getlist("mixing-final-delivery")
+        request.form.getlist("composition") \
+        request.form.getlist("arrangement") \
+        request.form.getlist("orchestration") \
+        request.form.getlist("music-direction") \
+        request.form.getlist("midi-mockups") \
+        request.form.getlist("score-preparation") \
+        request.form.getlist("music-production") \
+        request.form.getlist("mixing-final-delivery")
 
     number_of_players = request.form.get("number-of-players")
     preferred_date = request.form.get("preferred-date")
@@ -144,13 +176,13 @@ def form_submit():
         """
 
         if is_quote:
-            admin_html += f"""
+            admin_html = f"""
             <p><strong>Project type(s):</strong> {", ".join(project_types) or "—"}</p>
             <p><strong>Approx. number of players:</strong> {number_of_players or "—"}</p>
             <p><strong>Preferred date:</strong> {preferred_date or "—"}</p>
             """
 
-        admin_html += f"""
+        admin_html = f"""
         <p><strong>Message:</strong></p>
         <p>{message}</p>
         """
@@ -200,10 +232,18 @@ def form_submit():
 
         mail.send(msg)
         mail.send(response_msg)
+        app.logger.info(
+            "Contact form email sent (from=%s type=%s)", email, inquiry_type
+        )
         return redirect('/')
 
     except Exception as e:
         print("EMAIL ERROR:", e)
+    except Exception:
+        app.logger.exception(
+            "Failed to send contact form email (from=%s type=%s)",
+            email, inquiry_type,
+        )
         return "Unable to send email.", 500
 
 # ensures your Flask dev server only starts when you run the file directly, not when it's imported elsewhere.
