@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /set_language/
+Disallow: /form_submit
+
+Sitemap: https://farossoundworks.com/sitemap.xml
