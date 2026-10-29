@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="{{ current_locale }}" class="scroll-smooth">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWV660D5EP"></script>
@@ -12,8 +12,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faros Soundworks — Music Production & Orchestral Recording</title>
-    <meta name="description" content="Faros Soundworks is a music production and orchestral recording studio based in Spain. Scoring, mixing, and live orchestral sessions guided by clarity and craft.">
+    <title>{% block title %}{{ _("Original Music for Film & Video in Spain | Faros Soundworks") }}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{{ _("Original music for film, video, TV and games: composition, music production and live orchestral recording in Asturias, Spain, for clients across Europe.") }}{% endblock %}">
     <!--reCAPTCHA-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--Favicon-->

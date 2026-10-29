@@ -58,6 +58,12 @@ def get_locale():
 babel = Babel(app, locale_selector=get_locale)
 
 
+# Make the active language available to templates (used for <html lang="">)
+@app.context_processor
+def inject_locale():
+    return {'current_locale': get_locale() or app.config['BABEL_DEFAULT_LOCALE']}
+
+
 # Route to change language
 @app.route('/set_language/<lang_code>')
 def set_language(lang_code):

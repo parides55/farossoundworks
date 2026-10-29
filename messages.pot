@@ -564,3 +564,50 @@ msgstr ""
 msgid "Videos"
 msgstr ""
 
+#: templates/index.html
+msgid "Original Music for Film & Video in Spain | Faros Soundworks"
+msgstr ""
+
+#: templates/index.html
+msgid "Original music for film, video, TV and games: composition, music production and live orchestral recording in Asturias, Spain, for clients across Europe."
+msgstr ""
+
+#: templates/services.html
+msgid "Music Production Services for Film & Video | Faros Soundworks"
+msgstr ""
+
+#: templates/services.html
+msgid "Composition, orchestration, MIDI mockups, orchestral recording, music production, mixing and mastering for film, video and media. Based in Asturias, Spain."
+msgstr ""
+
+#: templates/work.html
+msgid "Our Work: Soundtracks & Orchestral Recordings | Faros Soundworks"
+msgstr ""
+
+#: templates/work.html
+msgid "Listen to our original music, video soundtracks and live orchestral session recordings for film and audiovisual projects, produced in Asturias, Spain."
+msgstr ""
+
+#: templates/about-us.html
+msgid "Rafaelos Christofi, Composer & Producer | Faros Soundworks"
+msgstr ""
+
+#: templates/about-us.html
+msgid "Faros Soundworks is led by composer and music producer Rafaelos Christofi, with credits in film, opera and theatre. Original music and orchestral recording."
+msgstr ""
+
+#: templates/facilities.html
+msgid "Recording Studio in Asturias, Spain | Faros Soundworks"
+msgstr ""
+
+#: templates/facilities.html
+msgid "Record at OVNI Studio in Llanera, Asturias: two live rooms for orchestras and bands, a Neve console and Pro Tools for recording, mixing and mastering."
+msgstr ""
+
+#: templates/contact-us.html
+msgid "Request a Quote for Music for Your Video | Faros Soundworks"
+msgstr ""
+
+#: templates/contact-us.html
+msgid "Tell us about your film or video project and request a quote for original music, orchestral recording or music production. We reply within two working days."
+msgstr ""

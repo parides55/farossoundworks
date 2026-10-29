@@ -682,6 +682,54 @@ msgstr "Grabaciones"
 msgid "Videos"
 msgstr "Vídeos"
 
+#: templates/index.html
+msgid "Original Music for Film & Video in Spain | Faros Soundworks"
+msgstr "Música Original para Cine y Vídeo en España | Faros Soundworks"
+
+#: templates/index.html
+msgid "Original music for film, video, TV and games: composition, music production and live orchestral recording in Asturias, Spain, for clients across Europe."
+msgstr "Música original para cine, vídeo, televisión y videojuegos: composición, producción musical y grabación orquestal en directo en Asturias, España."
+
+#: templates/services.html
+msgid "Music Production Services for Film & Video | Faros Soundworks"
+msgstr "Producción Musical para Cine y Vídeo | Faros Soundworks"
+
+#: templates/services.html
+msgid "Composition, orchestration, MIDI mockups, orchestral recording, music production, mixing and mastering for film, video and media. Based in Asturias, Spain."
+msgstr "Composición, orquestación, maquetas MIDI, grabación orquestal, producción musical, mezcla y masterización para cine, vídeo y medios. Desde Asturias."
+
+#: templates/work.html
+msgid "Our Work: Soundtracks & Orchestral Recordings | Faros Soundworks"
+msgstr "Nuestro Trabajo: Bandas Sonoras y Grabaciones | Faros Soundworks"
+
+#: templates/work.html
+msgid "Listen to our original music, video soundtracks and live orchestral session recordings for film and audiovisual projects, produced in Asturias, Spain."
+msgstr "Escucha nuestra música original, bandas sonoras para vídeo y grabaciones de sesiones orquestales en directo para cine y proyectos audiovisuales."
+
+#: templates/about-us.html
+msgid "Rafaelos Christofi, Composer & Producer | Faros Soundworks"
+msgstr "Rafaelos Christofi, Compositor y Productor | Faros Soundworks"
+
+#: templates/about-us.html
+msgid "Faros Soundworks is led by composer and music producer Rafaelos Christofi, with credits in film, opera and theatre. Original music and orchestral recording."
+msgstr "Faros Soundworks está dirigido por el compositor y productor musical Rafaelos Christofi, con créditos en cine, ópera y teatro. Música original en España."
+
+#: templates/facilities.html
+msgid "Recording Studio in Asturias, Spain | Faros Soundworks"
+msgstr "Estudio de Grabación en Asturias, España | Faros Soundworks"
+
+#: templates/facilities.html
+msgid "Record at OVNI Studio in Llanera, Asturias: two live rooms for orchestras and bands, a Neve console and Pro Tools for recording, mixing and mastering."
+msgstr "Graba en OVNI Studio, en Llanera, Asturias: dos salas para orquestas y bandas, consola Neve y Pro Tools para grabación, mezcla y masterización."
+
+#: templates/contact-us.html
+msgid "Request a Quote for Music for Your Video | Faros Soundworks"
+msgstr "Pide Presupuesto de Música para tu Vídeo | Faros Soundworks"
+
+#: templates/contact-us.html
+msgid "Tell us about your film or video project and request a quote for original music, orchestral recording or music production. We reply within two working days."
+msgstr "Cuéntanos tu proyecto de cine o vídeo y pide presupuesto de música original, grabación orquestal o producción musical. Respondemos en dos días laborables."
+
 #~ msgid "Previous"
 #~ msgstr "Previos"
 
